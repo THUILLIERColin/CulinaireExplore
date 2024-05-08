@@ -1,7 +1,7 @@
 export default function Carousel() {
   return (
     <>
-      <div className="carousel carousel-center max-w-md p-4 space-x-4 bg-base-200 rounded-box">
+      <div className="carousel carousel-center max-w-md p-4 space-x-4 bg-base-200 rounded-box border-2 border-base-300">
         <div className="carousel-item">
           <img
             src="https://images.unsplash.com/photo-1589704379319-3b83010f661e?q=80&w=2061&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
