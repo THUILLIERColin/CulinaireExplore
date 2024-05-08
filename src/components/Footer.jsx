@@ -15,6 +15,15 @@ export default function Footer() {
               8 Rue des Cinq-Piquets, Nancy, 54000, France
             </a>
             <br />
+            T&eacute;l&eacute;phone :&nbsp;
+            <a href="tel:+33 3 57 33 27 02" className="link link-hover">
+                +33 3 57 33 27 02
+            </a>
+            <br />
+            Adresse mail :&nbsp;
+            <a href="mailto:contact@culinaire.fr" className="link link-hover">
+                contact@culinaire.fr
+            </a>
           </p>
         </aside>
         <nav>
