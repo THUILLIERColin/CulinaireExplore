@@ -4,7 +4,7 @@ import ToogleTheme from "./ToogleTheme";
 export default function Navbar() {
   return (
     <nav>
-      <div className="navbar">
+      <div className="navbar bg-base-200 border-b">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
