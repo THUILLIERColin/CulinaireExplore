@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 import ToogleTheme from "./ToogleTheme";
 
@@ -46,14 +47,14 @@ export default function Navbar() {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">
+          <Link to={"/"} className="btn btn-ghost text-xl">
             <img src={logo} alt="Logo" className="w-10 h-10 rounded-lg" />
-          </a>
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a>À propos</a>
+              <Link to="/about">À propos</Link>
             </li>
             <li>
               <details>
