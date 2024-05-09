@@ -1,4 +1,5 @@
 import logoAndText from "../assets/logoAndText.png";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -28,24 +29,24 @@ export default function Footer() {
         </aside>
         <nav>
           <h6 className="footer-title">À propos de nous</h6>
-          <a className="link link-hover font-poppins">Concept</a>
-          <a className="link link-hover font-poppins">Notre équipe</a>
-          <a className="link link-hover font-poppins">Nos engagements</a>
+          <Link to="/concept" className="link link-hover font-poppins">Concept</Link>
+          <Link to="/team" className="link link-hover font-poppins">Notre équipe</Link>
+          <Link to="/commitment" className="link link-hover font-poppins">Nos engagements</Link>
         </nav>
         <nav>
           <h6 className="footer-title">Explorez plus</h6>
-          <a className="link link-hover font-poppins">Comment ça marche</a>
-          <a className="link link-hover font-poppins">Carnet gourmand</a>
-          <a className="link link-hover font-poppins">Témoignages voyageurs</a>
+          <Link to="/how-it-works" className="link link-hover font-poppins">Comment ça marche ?</Link>
+          <Link className="link link-hover font-poppins">Carnet gourmand</Link>
+          <Link className="link link-hover font-poppins">Témoignages voyageurs</Link>
         </nav>
         <nav>
           <h6 className="footer-title">Support et légal</h6>
-          <a className="link link-hover font-poppins">Écrivez-nous !</a>
-          <a className="link link-hover font-poppins">Conditions de vente</a>
-          <a className="link link-hover font-poppins">Mentions légales</a>
-          <a className="link link-hover font-poppins">
+          <Link to="/contact" className="link link-hover font-poppins">Écrivez-nous !</Link>
+          <Link to="/terms-of-sale" className="link link-hover font-poppins">Conditions de vente</Link>
+          <Link className="link link-hover font-poppins">Mentions légales</Link>
+          <Link className="link link-hover font-poppins">
             Politique de confidentialité & cookies
-          </a>
+          </Link>
         </nav>
       </footer>
     </>

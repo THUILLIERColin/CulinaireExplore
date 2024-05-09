@@ -6,6 +6,8 @@ import Concept from "./pages/Concept";
 import Team from "./pages/Team";
 import HowItsWorks from "./pages/HowItsWorks";
 import Contact from "./pages/Contact";
+import Commitment from "./pages/Commitment";
+import TermsOfSale from "./pages/TermsOfSale";
 
 const router = createBrowserRouter([
     {
@@ -24,17 +26,14 @@ const router = createBrowserRouter([
         element: <Concept />,
     },
     {
-        path: "/i-want-to-travel",
-        element: <IWantToTravel />,
-    },
-    {
         path: "/team",
         errorElement: <NotFoundPage />,
         element: <Team />,
     },
     {
-        path: "/i-want-to-travel",
-        element: <IWantToTravel />,
+        path: "/commitment",
+        errorElement: <NotFoundPage />,
+        element: <Commitment />,
     },
     {
         path: "/how-it-works",
@@ -43,7 +42,13 @@ const router = createBrowserRouter([
     },
     {
         path: "/contact",
+        errorElement: <NotFoundPage />,
         element: <Contact />,
+    },
+    {
+        path: "/terms-of-sale",
+        errorElement: <NotFoundPage />,
+        element: <TermsOfSale />,
     },
     ]);
 
