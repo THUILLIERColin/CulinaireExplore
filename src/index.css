@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('assets/fonts/Poppins-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Aileron";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("assets/fonts/Aileron.otf") format("opentype");
+}
+@font-face {
+  font-family: "Lovelace";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("assets/fonts/Lovelace.otf") format("opentype");
+}

@@ -3,7 +3,12 @@ import daisyui from "./node_modules/daisyui";
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        aileron: ['Aileron', 'sans-serif'],
+        lovelace: ['Lovelace', 'serif'],
+        poppins: ['Poppins', 'sans-serif']
+    }},
   },
   plugins: [daisyui],
   daisyui: {
