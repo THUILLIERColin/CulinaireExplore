@@ -13,9 +13,9 @@ export default function IWantToTravel() {
   const [departureDate, setDepartureDate] = useState("");
   const [adults, setAdults] = useState(1);
   const [children, setChildren] = useState(0);
-  const [days, setDays] = useState(15);
+  const [returnDate, setReturnDate] = useState("");
   const [description, setDescription] = useState("");
-  const [title, setTitle] = useState("");
+  const [isMan, setIsMan] = useState(true);
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [phone, setPhone] = useState("");
@@ -23,27 +23,58 @@ export default function IWantToTravel() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+  
+    // Vérifier que tous les champs requis sont remplis
+    if (!destination || !departureDate || !returnDate || !firstName || !lastName || !phone || !email || !description) {
+      alert("Veuillez remplir tous les champs requis.");
+      return;
+    }
+  
+    // Validation optionnelle de formats spécifiques (exemple pour l'email)
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      alert("Veuillez entrer une adresse email valide.");
+      return;
+    }
+  
+    // Validation des dates
+    if (new Date(departureDate) > new Date(returnDate)) {
+      alert("La date de retour doit être après la date de départ.");
+      return;
+    }
+
+    // Validation du téléphone
+    const phoneRegex = /^\d{10}$/;
+    if (!phoneRegex.test(phone)) {
+      alert("Veuillez entrer un numéro de téléphone valide.");
+      return;
+    }
+  
+    // Si tout est bon, logique pour enregistrer ou traiter les données
     console.log({
       destination,
       departureDate,
       adults,
       children,
-      days,
+      returnDate,
       description,
-      title,
+      isMan,
       firstName,
       lastName,
       phone,
       email,
     });
+  
+    // Redirection vers la page avec indication de succès
     navigate("/?success=true");
   };
+  
 
   return (
     <>
       <Navbar />
-      <section id="Form">
-        <h1 className="text-4xl font-bold  text-center">
+      <section id="form">
+        <h1 className="text-4xl font-bold text-center">
           Créez votre voyage sur mesure
         </h1>
         <p className="text-center font-lovelace text-lg max-w-4xl mx-auto my-10">
@@ -56,7 +87,6 @@ export default function IWantToTravel() {
           onSubmit={handleSubmit}
         >
           <h2 className="text-2xl font-bold mb-6">Faîtes créer votre voyage</h2>
-          <div className="grid grid-cols-2 gap-6">
             <div>
               <Select
                 label="Destination *"
@@ -66,8 +96,10 @@ export default function IWantToTravel() {
                 onChange={(e) => setDestination(e.target.value)}
               />
             </div>
+          <div className="col-span-2">
+          <div className="grid grid-cols-2 gap-6 my-4">
             <div>
-              <label className="block mb-2">Date de départ *</label>
+              <label className="block mb-2 font-poppins">Date de départ *</label>
               <input
                 type="date"
                 name="departureDate"
@@ -76,6 +108,19 @@ export default function IWantToTravel() {
                 onChange={(e) => setDepartureDate(e.target.value)}
               />
             </div>
+            <div>
+              <label className="block mb-2 font-poppins">Date de retour *</label>
+              <input
+                type="date"
+                name="returnDate"
+                className="input input-bordered w-full"
+                value={returnDate}
+                onChange={(e) => setReturnDate(e.target.value)}
+              />
+            </div>
+          </div>
+          </div>
+            <div className="grid grid-cols-2 gap-6">
             <div>
               <NumberPicker
                 label="Adulte(s) *"
@@ -90,15 +135,10 @@ export default function IWantToTravel() {
                 onChange={setChildren}
               />
             </div>
-            <div>
-              <NumberPicker
-                label="Durée du séjour (en jours)"
-                value={days}
-                onChange={setDays}
-              />
-            </div>
             <div className="col-span-2">
-              <div className="block mb-2 font-poppins">Description de votre voyage *</div>
+              <div className="block mb-2 font-poppins">
+                Description de votre voyage *
+              </div>
               <textarea
                 placeholder="Decrire votre voyage ici..."
                 className="textarea textarea-bordered textarea-md w-full max-w-xl font-poppins"
@@ -112,66 +152,102 @@ export default function IWantToTravel() {
           </h2>
           <div className="grid grid-cols-2 gap-6">
             <div>
-              <label className="block mb-2">Titre *</label>
               <div className="flex gap-4">
-                <label className="flex items-center gap-2">Monsieru</label>
+                <label className="flex items-center gap-2 mr-10">
+                  Monsieur
+                </label>
                 <input
-                    type="radio"
-                    name="Monsieur"
-                    className="radio checked:bg-primary"
-                    onChange={() => setTitle("Monsieur")}
-                    {...(title === "Monsieur" && { checked: true })}
-                  />
-            </div>
+                  type="radio"
+                  name="Monsieur"
+                  className="radio checked:bg-primary"
+                  onChange={() => setIsMan(true)}
+                  checked={isMan}
+                />
+                <label className="flex items-center gap-2">Madame</label>
+                <input
+                  type="radio"
+                  name="Madame"
+                  className="radio checked:bg-primary"
+                  onChange={() => setIsMan(false)}
+                  checked={!isMan}
+                />
+              </div>
             </div>
             <div className="col-span-2">
               <div className="grid grid-cols-2 gap-6">
                 <div>
                   <label className="block mb-2">Prénom *</label>
-                  <input
-                    type="text"
-                    name="firstName"
-                    className="input input-bordered w-full"
-                    value={firstName}
-                    onChange={(e) => setFirstName(e.target.value)}
-                  />
+                  <label className="input input-bordered flex items-center gap-2 mb-2">
+                    <input
+                      type="text"
+                      name="firstName"
+                      className="grow"
+                      placeholder="Pr&eacute;nom"
+                      value={firstName}
+                      onChange={(e) => setFirstName(e.target.value)}
+                    />
+                  </label>
                 </div>
                 <div>
                   <label className="block mb-2">Nom *</label>
-                  <input
-                    type="text"
-                    name="lastName"
-                    className="input input-bordered w-full"
-                    value={lastName}
-                    onChange={(e) => setLastName(e.target.value)}
-                  />
+                  <label className="input input-bordered flex items-center gap-2 mb-2">
+                    <input
+                      type="text"
+                      name="lastName"
+                      className="grow"
+                      placeholder="Nom"
+                      value={lastName}
+                      onChange={(e) => setLastName(e.target.value)}
+                    />
+                  </label>
                 </div>
               </div>
               <div className="grid grid-cols-2 gap-6">
                 <div>
                   <label className="block mb-2">Téléphone *</label>
-                  <input
-                    type="tel"
-                    name="phone"
-                    className="input input-bordered w-full"
-                    value={phone}
-                    onChange={(e) => setPhone(e.target.value)}
-                  />
+                  <label className="input input-bordered flex items-center gap-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      className="w-6 h-6"
+                    >
+                      <path d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" />
+                    </svg>
+                    <input
+                      type="tel"
+                      className="grow"
+                      placeholder="Téléphone"
+                      value={phone}
+                      onChange={(e) => setPhone(e.target.value)}
+                    />
+                  </label>
                 </div>
                 <div>
                   <label className="block mb-2">Email *</label>
-                  <input
-                    type="email"
-                    name="email"
-                    className="input input-bordered w-full"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                  />
+                  <label className="input input-bordered flex items-center gap-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 16 16"
+                      fill="currentColor"
+                      className="w-4 h-4 opacity-70"
+                    >
+                      <path d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z" />
+                      <path d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
+                    </svg>
+                    <input
+                      type="text"
+                      className="grow"
+                      placeholder="Email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                    />
+                  </label>
                 </div>
               </div>
             </div>
           </div>
-          <div className="mt-6">
+          <div className="mt-6 mr-3 flex justify-end">
             <button type="submit" className="btn btn-primary">
               Voyager maintenant !
             </button>
