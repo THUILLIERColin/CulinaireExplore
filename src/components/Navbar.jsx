@@ -44,6 +44,7 @@ export default function Navbar() {
               </li>
               <li>
                 <a>Contact</a>
+                <Link to={"/contact"}>Contact</Link>
               </li>
             </ul>
           </div>
@@ -71,6 +72,7 @@ export default function Navbar() {
             </li>
             <li>
               <a>Contact</a>
+            <Link to={"/contact"}>Contact</Link>
             </li>
           </ul>
         </div>
