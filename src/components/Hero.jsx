@@ -1,6 +1,6 @@
 import Carousel from './Carousel';
 import airplane from '../assets/airplane.svg';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import SuccessModal from './SuccessModal';
 import { useEffect } from 'react';
 
@@ -31,7 +31,11 @@ export default function Hero() {
             <div className="text-left">
                 <h1 className="text-5xl font-aileron text-neutral mr-10">It&apos;s time to travel!</h1>
                 <p className="py-6 text-neutral font-lovelace">Direction le <img src={airplane} alt="Avion" className="w-10 h-10 inline-block" /> plaisir</p>
-                <button className="btn btn-primary font-poppins">Reservez d&egrave;s maintenant !</button>
+                <button className="btn btn-primary font-poppins">
+                  <Link to="/i-want-to-travel">
+                    Reservez d&egrave;s maintenant !
+                  </Link>
+                </button>
             </div>
             <Carousel />
         </div>
