@@ -27,7 +27,7 @@ export default function Footer() {
           </p>
         </aside>
         <nav>
-          <h6 className="footer-title">À propos de nous ll</h6>
+          <h6 className="footer-title">À propos de nous</h6>
           <a className="link link-hover font-poppins">Concept</a>
           <a className="link link-hover font-poppins">Notre équipe</a>
           <a className="link link-hover font-poppins">Nos engagements</a>
