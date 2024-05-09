@@ -6,7 +6,7 @@ export default function Footer() {
       <footer className="footer p-10 bg-base-200 text-base-content">
         <aside>
           <img src={logoAndText} alt="logo" className="rounded-lg w-16 h-14" />
-          <p>
+          <p className="font-poppins">
             <a
               href="http://maps.google.com/?q=8 Rue des Cinq-Piquets, Nancy, 54000, France"
               className="link link-hover"
@@ -27,23 +27,23 @@ export default function Footer() {
           </p>
         </aside>
         <nav>
-          <h6 className="footer-title">À propos de nous</h6>
-          <a className="link link-hover">Concept</a>
-          <a className="link link-hover">Notre équipe</a>
-          <a className="link link-hover">Nos engagements</a>
+          <h6 className="footer-title">À propos de nous ll</h6>
+          <a className="link link-hover font-poppins">Concept</a>
+          <a className="link link-hover font-poppins">Notre équipe</a>
+          <a className="link link-hover font-poppins">Nos engagements</a>
         </nav>
         <nav>
           <h6 className="footer-title">Explorez plus</h6>
-          <a className="link link-hover">Comment ça marche</a>
-          <a className="link link-hover">Carnet gourmand</a>
-          <a className="link link-hover">Témoignages voyageurs</a>
+          <a className="link link-hover font-poppins">Comment ça marche</a>
+          <a className="link link-hover font-poppins">Carnet gourmand</a>
+          <a className="link link-hover font-poppins">Témoignages voyageurs</a>
         </nav>
         <nav>
           <h6 className="footer-title">Support et légal</h6>
-          <a className="link link-hover">Écrivez-nous !</a>
-          <a className="link link-hover">Conditions de vente</a>
-          <a className="link link-hover">Mentions légales</a>
-          <a className="link link-hover">
+          <a className="link link-hover font-poppins">Écrivez-nous !</a>
+          <a className="link link-hover font-poppins">Conditions de vente</a>
+          <a className="link link-hover font-poppins">Mentions légales</a>
+          <a className="link link-hover font-poppins">
             Politique de confidentialité & cookies
           </a>
         </nav>
