@@ -72,6 +72,9 @@ export default function Navbar() {
                   <li>
                     <Link to="/team">Nos &eacute;quipe</Link>
                   </li>
+                  <li>
+                    <Link to="/commitment">Nos engagements</Link>
+                  </li>
                 </ul>
               </details>
             </li>
