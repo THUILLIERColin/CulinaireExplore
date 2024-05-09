@@ -42,14 +42,14 @@ export default function IWantToTravel() {
   return (
     <>
       <Navbar />
-      <section id="Form" >
-        <h1 className="text-4xl font-bold text-center">
+      <section id="Form">
+        <h1 className="text-4xl font-bold  text-center">
           Créez votre voyage sur mesure
         </h1>
-        <p className="text-center text-lg max-w-4xl mx-auto my-10">
-        Décrivez votre projet de voyage à l&apos;aide du formulaire ci-dessous, un
-        conseiller spécialiste vous contactera dans les meilleurs délais pour en
-        discuter.
+        <p className="text-center font-lovelace text-lg max-w-4xl mx-auto my-10">
+          Décrivez votre projet de voyage à l&apos;aide du formulaire
+          ci-dessous, un conseiller spécialiste vous contactera dans les
+          meilleurs délais pour en discuter.
         </p>
         <form
           className="max-w-4xl mx-auto my-10 bg-base-200 p-6 rounded-lg shadow-lg"
@@ -98,10 +98,10 @@ export default function IWantToTravel() {
               />
             </div>
             <div className="col-span-2">
-              <div className="block mb-2">Description de votre voyage *</div>
+              <div className="block mb-2 font-poppins">Description de votre voyage *</div>
               <textarea
                 placeholder="Decrire votre voyage ici..."
-                className="textarea textarea-bordered textarea-md w-full max-w-xl"
+                className="textarea textarea-bordered textarea-md w-full max-w-xl font-poppins"
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
               ></textarea>
@@ -111,59 +111,64 @@ export default function IWantToTravel() {
             Vos informations personnelles
           </h2>
           <div className="grid grid-cols-2 gap-6">
-            <div className="col-span-1">
-              <button
-                type="button"
-                className="btn"
-                onClick={() => setTitle("M")}
-              >
-                MR
-              </button>
-              <button
-                type="button"
-                className="btn"
-                onClick={() => setTitle("Mme")}
-              >
-                MME
-              </button>
-            </div>
-            <div className="col-span-1 grid grid-cols-2 gap-6">
-              <input
-                type="text"
-                name="firstName"
-                className="input input-bordered"
-                placeholder="Prénom *"
-                value={firstName}
-                onChange={(e) => setFirstName(e.target.value)}
-              />
-              <input
-                type="text"
-                name="lastName"
-                className="input input-bordered"
-                placeholder="Nom *"
-                value={lastName}
-                onChange={(e) => setLastName(e.target.value)}
-              />
-            </div>
             <div>
-              <input
-                type="text"
-                name="phone"
-                className="input input-bordered"
-                placeholder="Téléphone *"
-                value={phone}
-                onChange={(e) => setPhone(e.target.value)}
-              />
+              <label className="block mb-2">Titre *</label>
+              <div className="flex gap-4">
+                <label className="flex items-center gap-2">Monsieru</label>
+                <input
+                    type="radio"
+                    name="Monsieur"
+                    className="radio checked:bg-primary"
+                    onChange={() => setTitle("Monsieur")}
+                    {...(title === "Monsieur" && { checked: true })}
+                  />
             </div>
-            <div>
-              <input
-                type="email"
-                name="email"
-                className="input input-bordered"
-                placeholder="Email *"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
+            </div>
+            <div className="col-span-2">
+              <div className="grid grid-cols-2 gap-6">
+                <div>
+                  <label className="block mb-2">Prénom *</label>
+                  <input
+                    type="text"
+                    name="firstName"
+                    className="input input-bordered w-full"
+                    value={firstName}
+                    onChange={(e) => setFirstName(e.target.value)}
+                  />
+                </div>
+                <div>
+                  <label className="block mb-2">Nom *</label>
+                  <input
+                    type="text"
+                    name="lastName"
+                    className="input input-bordered w-full"
+                    value={lastName}
+                    onChange={(e) => setLastName(e.target.value)}
+                  />
+                </div>
+              </div>
+              <div className="grid grid-cols-2 gap-6">
+                <div>
+                  <label className="block mb-2">Téléphone *</label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    className="input input-bordered w-full"
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
+                  />
+                </div>
+                <div>
+                  <label className="block mb-2">Email *</label>
+                  <input
+                    type="email"
+                    name="email"
+                    className="input input-bordered w-full"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                  />
+                </div>
+              </div>
             </div>
           </div>
           <div className="mt-6">
