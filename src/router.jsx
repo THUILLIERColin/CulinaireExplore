@@ -1,13 +1,13 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
-import Error from "./pages/Error";
+import NotFoundPage from "./pages/NotFoundPage";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 const router = createBrowserRouter([
     {
         path: "/",
-        errorElement: <Error />,
+        errorElement: <NotFoundPage />,
         element: <App />,
     },
     {

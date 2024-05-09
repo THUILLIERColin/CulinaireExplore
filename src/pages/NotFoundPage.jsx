@@ -1,4 +1,4 @@
-export default function Error() {
+export default function NotFoundPage() {
   return (
     <>
       <div className="h-screen w-screen bg-base-50 flex items-center">
