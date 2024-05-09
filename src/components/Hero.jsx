@@ -4,7 +4,7 @@ import airplane from '../assets/airplane.svg';
 export default function Hero() {
   return (
     <>
-      <div className="hero min-w-screen mt-10 mb-10">
+      <div className="hero min-w-screen my-10">
         <div className="hero-content flex-col lg:flex-row">
             <div className="text-left">
                 <h1 className="text-5xl font-aileron text-neutral mr-10">It&apos;s time to travel!</h1>
