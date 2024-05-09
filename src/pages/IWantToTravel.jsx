@@ -73,7 +73,7 @@ export default function IWantToTravel() {
   return (
     <>
       <Navbar />
-      <section id="form">
+      <section id="form" className="text-neutral">
         <h1 className="text-4xl font-bold text-center">
           Créez votre voyage sur mesure
         </h1>

@@ -4,7 +4,7 @@ import ToogleTheme from "./ToogleTheme";
 
 export default function Navbar() {
   return (
-    <nav className="mb-32">
+    <nav className="mb-32 text-neutral">
       <div className="navbar bg-base-200 border-b">
         <div className="navbar-start">
           <div className="dropdown">
