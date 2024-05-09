@@ -1,8 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
 import NotFoundPage from "./pages/NotFoundPage";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import IWantToTravel from "./pages/IWantToTravel";
+import Concept from "./pages/Concept";
+import Team from "./pages/Team";
+import HowItsWorks from "./pages/HowItsWorks";
+import Contact from "./pages/Contact";
 
 const router = createBrowserRouter([
     {
@@ -11,14 +14,36 @@ const router = createBrowserRouter([
         element: <App />,
     },
     {
-        path: "/about",
-        element: <>
-        <Navbar />
-        <main>
-            <h1>About</h1>
-        </main>
-        <Footer />
-        </>
+        path: "/i-want-to-travel",
+        errorElement: <NotFoundPage />,
+        element: <IWantToTravel />,
+    },
+    {
+        path: "/concept",
+        errorElement: <NotFoundPage />,
+        element: <Concept />,
+    },
+    {
+        path: "/i-want-to-travel",
+        element: <IWantToTravel />,
+    },
+    {
+        path: "/team",
+        errorElement: <NotFoundPage />,
+        element: <Team />,
+    },
+    {
+        path: "/i-want-to-travel",
+        element: <IWantToTravel />,
+    },
+    {
+        path: "/how-it-works",
+        errorElement: <NotFoundPage />,
+        element: <HowItsWorks />,
+    },
+    {
+        path: "/contact",
+        element: <Contact />,
     },
     ]);
 
