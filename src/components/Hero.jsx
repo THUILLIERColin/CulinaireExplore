@@ -1,9 +1,31 @@
 import Carousel from './Carousel';
 import airplane from '../assets/airplane.svg';
+import { useLocation } from 'react-router-dom';
+import SuccessModal from './SuccessModal';
+import { useEffect } from 'react';
 
 export default function Hero() {
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
+  const success = queryParams.get('success');
+
+   useEffect(() => {
+    if (success) {
+      const modal = document.getElementById('success_order');
+      modal.showModal();
+      setTimeout(() => {
+        modal.close();
+        history.pushState(null, null, '/');
+      }, 3000);
+    }
+  }
+  , [success]);
+
   return (
     <>
+    {success && (
+        <SuccessModal id="success_order" description="Pr&eacute;parez-vous &agrave; voyager votre demande a &eacute;t&eacute; enregistr&eacute;e" />
+      )}
       <div className="hero min-w-screen my-10">
         <div className="hero-content flex-col lg:flex-row">
             <div className="text-left">
