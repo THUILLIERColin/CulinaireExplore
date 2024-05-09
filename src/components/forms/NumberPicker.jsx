@@ -23,7 +23,7 @@ export default function NumberPicker({ label, value, onChange }) {
 
   return (
     <div>
-      <label className="block mb-2">{label}</label>
+      <label className="block mb-2 font-poppins">{label}</label>
       <div className="flex items-center">
         <button
           type="button"

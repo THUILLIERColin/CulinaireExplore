@@ -11,10 +11,10 @@ Select.propTypes = {
 export default function Select({ label, options, placeholder, value, onChange }) {
   return (
     <label className="form-control w-full max-w-lg">
-      <div className="block mb-2">
+      <div className="block mb-2 font-poppins">
         {label}
       </div>
-      <select className="select select-bordered" value={value} onChange={onChange}>
+      <select className="select select-bordered font-poppins" value={value} onChange={onChange}>
         <option disabled value="">{placeholder}</option>
         {options.map((option, index) => (
           <option key={index} value={option}>{option}</option>
