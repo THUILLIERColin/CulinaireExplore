@@ -1,6 +1,4 @@
 import { useEffect, useState } from "react";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
 import Select from "../components/forms/Select";
 import NumberPicker from "../components/forms/NumberPicker";
 import europeanCountries from "../data/countries.json";
@@ -41,20 +39,29 @@ export default function IWantToTravel() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-  
+
     // Vérifier que tous les champs requis sont remplis
-    if (!destination || !departureDate || !returnDate || !firstName || !lastName || !phone || !email || !description) {
+    if (
+      !destination ||
+      !departureDate ||
+      !returnDate ||
+      !firstName ||
+      !lastName ||
+      !phone ||
+      !email ||
+      !description
+    ) {
       alert("Veuillez remplir tous les champs requis.");
       return;
     }
-  
+
     // Validation optionnelle de formats spécifiques (exemple pour l'email)
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
       alert("Veuillez entrer une adresse email valide.");
       return;
     }
-  
+
     // Validation des dates
     if (new Date(departureDate) > new Date(returnDate)) {
       alert("La date de retour doit être après la date de départ.");
@@ -67,7 +74,7 @@ export default function IWantToTravel() {
       alert("Veuillez entrer un numéro de téléphone valide.");
       return;
     }
-  
+
     // Si tout est bon, logique pour enregistrer ou traiter les données
     const data = {
       destination,
@@ -85,18 +92,19 @@ export default function IWantToTravel() {
 
     localStorage.setItem("travelData", JSON.stringify(data));
 
-  
     // Redirection vers la page avec indication de succès
     navigate("/?success=true");
   };
-  
 
   return (
-    <>
-      <Navbar />
-      
-      <div className="bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${worldBackground})` }}>
-      <section id="form" className="py-20 text-neutral bg-base-100 bg-opacity-65">
+    <div
+      className="bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: `url(${worldBackground})` }}
+    >
+      <section
+        id="form"
+        className="py-20 text-neutral bg-base-100 bg-opacity-65"
+      >
         <h1 className="text-4xl font-bold text-center">
           Créez votre voyage sur mesure
         </h1>
@@ -110,40 +118,44 @@ export default function IWantToTravel() {
           onSubmit={handleSubmit}
         >
           <h2 className="text-2xl font-bold mb-6">Faîtes créer votre voyage</h2>
-            <div>
-              <Select
-                label="Destination *"
-                options={europeanCountries}
-                placeholder="Sélectionnez un pays"
-                value={destination}
-                onChange={(e) => setDestination(e.target.value)}
-              />
-            </div>
+          <div>
+            <Select
+              label="Destination *"
+              options={europeanCountries}
+              placeholder="Sélectionnez un pays"
+              value={destination}
+              onChange={(e) => setDestination(e.target.value)}
+            />
+          </div>
           <div className="col-span-2">
-          <div className="grid grid-cols-2 gap-6 my-4">
-            <div>
-              <label className="block mb-2 font-poppins">Date de départ *</label>
-              <input
-                type="date"
-                name="departureDate"
-                className="input input-bordered w-full"
-                value={departureDate}
-                onChange={(e) => setDepartureDate(e.target.value)}
-              />
-            </div>
-            <div>
-              <label className="block mb-2 font-poppins">Date de retour *</label>
-              <input
-                type="date"
-                name="returnDate"
-                className="input input-bordered w-full"
-                value={returnDate}
-                onChange={(e) => setReturnDate(e.target.value)}
-              />
+            <div className="grid grid-cols-2 gap-6 my-4">
+              <div>
+                <label className="block mb-2 font-poppins">
+                  Date de départ *
+                </label>
+                <input
+                  type="date"
+                  name="departureDate"
+                  className="input input-bordered w-full"
+                  value={departureDate}
+                  onChange={(e) => setDepartureDate(e.target.value)}
+                />
+              </div>
+              <div>
+                <label className="block mb-2 font-poppins">
+                  Date de retour *
+                </label>
+                <input
+                  type="date"
+                  name="returnDate"
+                  className="input input-bordered w-full"
+                  value={returnDate}
+                  onChange={(e) => setReturnDate(e.target.value)}
+                />
+              </div>
             </div>
           </div>
-          </div>
-            <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-2 gap-6">
             <div>
               <NumberPicker
                 label="Adulte(s) *"
@@ -277,8 +289,6 @@ export default function IWantToTravel() {
           </div>
         </form>
       </section>
-      </div>
-      <Footer />
-    </>
+    </div>
   );
 }

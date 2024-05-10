@@ -1,10 +1,6 @@
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
-
 export default function TermsOfSale() {
   return (
     <>
-      <Navbar />
       <div className="terms-container text-neutral">
         <h1 className="text-4xl font-bold text-center">Conditions de Vente</h1>
         <p className="text-center font-lovelace text-lg max-w-4xl mx-auto my-10">
@@ -88,7 +84,6 @@ export default function TermsOfSale() {
           conditions générales de vente.
         </p>
       </div>
-      <Footer />
     </>
   );
 }

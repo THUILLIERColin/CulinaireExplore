@@ -1,7 +1,7 @@
 export default function NotFoundPage() {
   return (
     <>
-      <div className="h-screen w-screen bg-base-50 flex items-center">
+      <div className="bg-base-50 flex items-center">
         <div className="container flex flex-col md:flex-row items-center justify-between px-5 text-gray-700">
           <div className="w-full lg:w-1/2 mx-8">
             <div className="text-7xl text-error font-dark font-extrabold mb-8">
