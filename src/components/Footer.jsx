@@ -23,13 +23,13 @@ export default function Footer() {
               </a>
               <br />
               T&eacute;l&eacute;phone :&nbsp;
-              <a href="tel:+33 3 57 33 27 02" className="link link-hover">
-                +33 3 57 33 27 02
+              <a href="tel:+33 3 54 33 27 02" className="link link-hover">
+                +33 3 54 33 27 02
               </a>
               <br />
               Adresse mail :&nbsp;
               <a href="mailto:contact@culinaire.fr" className="link link-hover">
-                contact@culinaire.fr
+                contact@culinaire-explore.fr
               </a>
             </p>
           </aside>
