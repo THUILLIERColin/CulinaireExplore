@@ -5,6 +5,7 @@ import Select from "../components/forms/Select";
 import NumberPicker from "../components/forms/NumberPicker";
 import europeanCountries from "../data/countries.json";
 import { useNavigate } from "react-router-dom";
+import worldBackground from "../assets/world.svg";
 
 export default function IWantToTravel() {
   let navigate = useNavigate();
@@ -93,7 +94,9 @@ export default function IWantToTravel() {
   return (
     <>
       <Navbar />
-      <section id="form" className="text-neutral">
+      
+      <div className="bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${worldBackground})` }}>
+      <section id="form" className="py-20 text-neutral bg-base-100 bg-opacity-65">
         <h1 className="text-4xl font-bold text-center">
           Créez votre voyage sur mesure
         </h1>
@@ -274,6 +277,7 @@ export default function IWantToTravel() {
           </div>
         </form>
       </section>
+      </div>
       <Footer />
     </>
   );
