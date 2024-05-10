@@ -23,7 +23,7 @@ export default function IWantToTravel() {
   const [email, setEmail] = useState("");
 
   useEffect(() => {
-    const data = JSON.parse(localStorage.getItem("travelData"));
+    const data = JSON.parse(sessionStorage.getItem("travelData"));
     if (data) {
       setDestination(data.destination);
       setDepartureDate(data.departureDate);
