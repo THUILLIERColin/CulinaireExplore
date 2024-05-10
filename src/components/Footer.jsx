@@ -1,6 +1,8 @@
 import logoAndText from "../assets/logoAndText.png";
 import { Link } from "react-router-dom";
 import heart from "../assets/heart.svg";
+import x from "../assets/x.svg";
+import instagram from "../assets/instagram.svg";
 
 export default function Footer() {
   return (
@@ -58,10 +60,30 @@ export default function Footer() {
             </Link>
           </nav>
           <nav>
-            <h6 className="footer-title">Demander un partenariat</h6>
+            <h6 className="footer-title">Nous retrouver</h6>
             <Link to="/contact" className="link link-hover font-poppins">
               Écrivez-nous !
             </Link>
+            <div className="grid grid-flow-col gap-4">
+              <a href="https://www.twitter.com" target="_blank">
+                <img src={x} alt="Twitter" className="w-6 h-6" />
+              </a>
+              <a href="https://www.instagram.com" target="_blank">
+                <img src={instagram} alt="Instagram" className="w-6 h-6" />
+
+              </a>
+              <a>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  className="fill-current"
+                >
+                  <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+                </svg>
+              </a>
+            </div>
           </nav>
         </div>
         <div className="divider"></div>
