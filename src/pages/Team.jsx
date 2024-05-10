@@ -1,5 +1,3 @@
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
 import SplitScreen from "../components/SplitScreen";
 import Valentine from "../assets/img/ValentineTHUILLIER.jpg";
 import Rose from "../assets/img/RoseMANCHERON.jpg";
@@ -8,7 +6,6 @@ import Timeline from "../components/Timeline";
 export default function Team() {
   return (
     <>
-      <Navbar />
       <section id="team" className="mx-28 max-w-screen-lg mb-36">
         <h1 className="text-4xl font-aileron text-center">
           Notre équipe de choc
@@ -72,7 +69,6 @@ export default function Team() {
           ]}
         />
       </section>
-      <Footer />
     </>
   );
 }

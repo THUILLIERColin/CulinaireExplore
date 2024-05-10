@@ -1,7 +1,14 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function ToggleTheme() {
   const [isNightMode, setIsNightMode] = useState(false); // État initial false, indiquant le mode jour
+
+  useEffect(() => {
+    const theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "GourmetVoyagerDark" : "GourmetVoyager";
+    document.documentElement.setAttribute("data-theme", theme);
+    setIsNightMode(theme === "GourmetVoyagerDark");
+  }
+  , []);
 
   const handleToggle = () => {
     setIsNightMode(!isNightMode); // Inverse l'état de isNightMode
