@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Select from "../components/forms/Select";
@@ -20,6 +20,23 @@ export default function IWantToTravel() {
   const [lastName, setLastName] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
+
+  useEffect(() => {
+    const data = JSON.parse(localStorage.getItem("travelData"));
+    if (data) {
+      setDestination(data.destination);
+      setDepartureDate(data.departureDate);
+      setReturnDate(data.returnDate);
+      setAdults(data.adults);
+      setChildren(data.children);
+      setDescription(data.description);
+      setIsMan(data.isMan);
+      setFirstName(data.firstName);
+      setLastName(data.lastName);
+      setPhone(data.phone);
+      setEmail(data.email);
+    }
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -51,19 +68,22 @@ export default function IWantToTravel() {
     }
   
     // Si tout est bon, logique pour enregistrer ou traiter les données
-    console.log({
+    const data = {
       destination,
       departureDate,
+      returnDate,
       adults,
       children,
-      returnDate,
       description,
       isMan,
       firstName,
       lastName,
       phone,
       email,
-    });
+    };
+
+    localStorage.setItem("travelData", JSON.stringify(data));
+
   
     // Redirection vers la page avec indication de succès
     navigate("/?success=true");
