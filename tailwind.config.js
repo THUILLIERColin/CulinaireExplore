@@ -8,6 +8,10 @@ export default {
         aileron: ['Aileron', 'sans-serif'],
         lovelace: ['Lovelace', 'serif'],
         poppins: ['Poppins', 'sans-serif']
+    }, 
+    width: {
+      '128': '32rem',
+      '144': '36rem',
     }},
   },
   plugins: [daisyui],
