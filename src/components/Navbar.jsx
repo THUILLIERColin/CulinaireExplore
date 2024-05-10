@@ -38,7 +38,7 @@ export default function Navbar() {
                     <Link to="/concept">Notre concept</Link>
                   </li>
                   <li>
-                    <Link to="/team">Nos &eacute;quipe</Link>
+                    <Link to="/team">Notre &eacute;quipe</Link>
                   </li>
                   <li>
                     <Link to="/commitment">Nos engagements</Link>
@@ -70,7 +70,7 @@ export default function Navbar() {
                     <Link to="/concept">Notre concept</Link>
                   </li>
                   <li>
-                    <Link to="/team">Nos &eacute;quipe</Link>
+                    <Link to="/team">Notre &eacute;quipe</Link>
                   </li>
                   <li>
                     <Link to="/commitment">Nos engagements</Link>
