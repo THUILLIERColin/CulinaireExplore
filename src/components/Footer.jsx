@@ -1,8 +1,8 @@
-import logoAndText from "../assets/logoAndText.png";
+import logoAndText from "../assets/img/logoAndText.png";
 import { Link } from "react-router-dom";
-import heart from "../assets/heart.svg";
-import x from "../assets/x.svg";
-import instagram from "../assets/instagram.svg";
+import heart from "../assets/svg/heart.svg";
+import x from "../assets/svg/x.svg";
+import instagram from "../assets/svg/instagram.svg";
 
 export default function Footer() {
   return (

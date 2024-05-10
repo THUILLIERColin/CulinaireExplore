@@ -1,5 +1,5 @@
 import Carousel from './Carousel';
-import airplane from '../assets/airplane.svg';
+import airplane from '../assets/svg/airplane.svg';
 import { Link, useLocation } from 'react-router-dom';
 import SuccessModal from './SuccessModal';
 import { useEffect } from 'react';
