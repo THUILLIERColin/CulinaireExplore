@@ -89,7 +89,7 @@ export default function Footer() {
         <div className="divider"></div>
         {/* flex-col lg:flex-row items-center justify-between */}
         <div className="footer-bottom grid grid-cols-1 lg:grid-cols-3 gap-4 items-center justify-between">
-          <p className="font-aileron mr-4 lg:text-center">
+          <p className="font-aileron mr-4 text-center">
             <img src={heart} alt="Coeur" className="w-5 h-6 inline-block" />
             &nbsp;Fait avec passion &agrave; Nancy
           </p>
