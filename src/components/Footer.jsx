@@ -96,13 +96,13 @@ export default function Footer() {
             &copy; 2024 Culinaire Explore. Tous droits réservés.
           </p>
           <nav className="flex flex-1 justify-center">
-            <Link to="/terms-of-sale" className="link link-hover font-aileron">
+            <Link to="/terms-of-sale" className="link link-hover font-aileron xl:mx-7">
               Conditions de vente
             </Link>
-            <Link className="link link-hover font-aileron">
+            <Link className="link link-hover font-aileron xl:mx-7">
               Mentions légales
             </Link>
-            <Link className="link link-hover font-aileron">
+            <Link className="link link-hover font-aileron xl:mx-7">
               Politique de confidentialité &amp; cookies
             </Link>
           </nav>
