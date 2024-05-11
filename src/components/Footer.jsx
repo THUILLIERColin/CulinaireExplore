@@ -90,7 +90,7 @@ export default function Footer() {
         <div className="footer-bottom flex flex-col lg:flex-row items-center justify-between">
           <p className="font-aileron mr-4 flex-none">
             <img src={heart} alt="Coeur" className="w-5 h-6 inline-block" />
-            &nbsp;Fais avec passion &agrave; Nancy
+            &nbsp;Fait avec passion &agrave; Nancy
           </p>
           <p className="text-center font-aileron mx-4 flex-1">
             &copy; 2024 Culinaire Explore. Tous droits réservés.
