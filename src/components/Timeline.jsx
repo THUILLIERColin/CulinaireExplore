@@ -18,7 +18,7 @@ export default function Timeline({ title, introText, steps }) {
     <div className="py-12 px-8 bg-base-200 m-10 rounded-2xl shadow-inner">
       <h1 className="text-3xl font-semibold text-center mb-10">{title}</h1>
       <p className="text-center font-lovelace text-xl mb-10">{introText}</p>
-      <div className="flex justify-between items-center">
+      <div className="flex flex-col lg:flex-row justify-between items-center">
         {steps.map((step, index) => (
           <>
             <TimelineStep
@@ -27,7 +27,7 @@ export default function Timeline({ title, introText, steps }) {
               description={step.description}
             />
             {index < steps.length - 1 && (
-              <div className="w-full flex items-center justify-center">
+              <div className="w-full flex items-center justify-center my-5 lg:my-auto">
                 <div className="h-1 flex-grow mx-2 dotted"></div>
               </div>
             )}
