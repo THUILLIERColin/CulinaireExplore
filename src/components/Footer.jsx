@@ -70,7 +70,6 @@ export default function Footer() {
               </a>
               <a href="https://www.instagram.com" target="_blank">
                 <img src={instagram} alt="Instagram" className="w-6 h-6" />
-
               </a>
               <a>
                 <svg
@@ -89,21 +88,24 @@ export default function Footer() {
         <div className="divider"></div>
         {/* flex-col lg:flex-row items-center justify-between */}
         <div className="footer-bottom grid grid-cols-1 lg:grid-cols-3 gap-4 items-center justify-between">
-          <p className="font-aileron mr-4 lg:text-center">
+          <p className="font-aileron mr-4 text-center lg:text-left">
             <img src={heart} alt="Coeur" className="w-5 h-6 inline-block" />
             &nbsp;Fait avec passion &agrave; Nancy
           </p>
-          <p className="text-center font-aileron mx-4">
+          <p className="text-center font-aileron">
             &copy; 2024 Culinaire Explore. Tous droits réservés.
           </p>
-          <nav className="flex justify-center">
-            <Link to="/terms-of-sale" className="link link-hover font-aileron xl:mx-7">
+          <nav className="flex justify-center text-center">
+            <Link
+              to="/terms-of-sale"
+              className="link link-hover font-aileron mx-3 xl:mx-7"
+            >
               Conditions de vente
             </Link>
-            <Link className="link link-hover font-aileron xl:mx-7">
+            <Link className="link link-hover font-aileron mx-3 xl:mx-7">
               Mentions légales
             </Link>
-            <Link className="link link-hover font-aileron xl:mx-7">
+            <Link className="link link-hover font-aileron mx-3 xl:mx-7">
               Politique de confidentialité &amp; cookies
             </Link>
           </nav>
