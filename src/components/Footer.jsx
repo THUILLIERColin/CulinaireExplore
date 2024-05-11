@@ -87,15 +87,16 @@ export default function Footer() {
           </nav>
         </div>
         <div className="divider"></div>
-        <div className="footer-bottom flex flex-col lg:flex-row items-center justify-between">
-          <p className="font-aileron mr-4 flex-none">
+        {/* flex-col lg:flex-row items-center justify-between */}
+        <div className="footer-bottom grid grid-cols-1 lg:grid-cols-3 gap-4 items-center justify-between">
+          <p className="font-aileron mr-4 lg:text-center">
             <img src={heart} alt="Coeur" className="w-5 h-6 inline-block" />
             &nbsp;Fait avec passion &agrave; Nancy
           </p>
-          <p className="text-center font-aileron mx-4 flex-1">
+          <p className="text-center font-aileron mx-4">
             &copy; 2024 Culinaire Explore. Tous droits réservés.
           </p>
-          <nav className="flex flex-1 justify-center">
+          <nav className="flex justify-center">
             <Link to="/terms-of-sale" className="link link-hover font-aileron xl:mx-7">
               Conditions de vente
             </Link>
