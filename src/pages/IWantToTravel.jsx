@@ -90,7 +90,7 @@ export default function IWantToTravel() {
       email,
     };
 
-    localStorage.setItem("travelData", JSON.stringify(data));
+    sessionStorage.setItem("travelData", JSON.stringify(data));
 
     // Redirection vers la page avec indication de succès
     navigate("/?success=true");
@@ -105,7 +105,7 @@ export default function IWantToTravel() {
         id="form"
         className="py-20 text-neutral bg-base-100 bg-opacity-65"
       >
-        <h1 className="text-4xl font-bold text-center">
+        <h1 className="text-4xl font-aileron font-bold text-center">
           Créez votre voyage sur mesure
         </h1>
         <p className="text-center font-lovelace text-lg max-w-4xl mx-auto my-10">
@@ -117,7 +117,7 @@ export default function IWantToTravel() {
           className="max-w-4xl mx-auto my-10 bg-base-200 p-6 rounded-lg shadow-lg"
           onSubmit={handleSubmit}
         >
-          <h2 className="text-2xl font-bold mb-6">Faîtes créer votre voyage</h2>
+          <h2 className="text-2xl font-aileron font-bold mb-6">Faîtes créer votre voyage</h2>
           <div>
             <Select
               label="Destination *"
@@ -182,7 +182,7 @@ export default function IWantToTravel() {
               ></textarea>
             </div>
           </div>
-          <h2 className="text-xl font-bold mt-6 mb-4">
+          <h2 className="text-xl font-aileron font-bold mt-6 mb-4">
             Vos informations personnelles
           </h2>
           <div className="grid grid-cols-2 gap-6">
@@ -271,7 +271,7 @@ export default function IWantToTravel() {
                       <path d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
                     </svg>
                     <input
-                      type="text"
+                      type="email"
                       className="grow"
                       placeholder="Email"
                       value={email}

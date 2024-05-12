@@ -12,7 +12,7 @@ export default function TimelineStep({ number, title, description }) {
       <div className="w-12 h-12 flex items-center justify-center rounded-full bg-blue-200 text-blue-800 font-bold">
         {number}
       </div>
-      <h2 className="text-lg font-semibold mt-4">{title}</h2>
+      <h2 className="text-lg font-bold font-aileron mt-4">{title}</h2>
       <p className="text-center font-lovelace mt-2">{description}</p>
     </div>
   );
