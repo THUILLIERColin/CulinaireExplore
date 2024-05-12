@@ -1,10 +1,16 @@
 import { Link } from "react-router-dom";
+import PropType from "prop-types";
 import logo from "../assets/img/logo.png"
 import ToogleTheme from "./ToogleTheme";
 
+Navbar.propTypes = {
+  margin: PropType.string,
+};
+
 export default function Navbar() {
+
   return (
-    <nav className="mb-32 text-neutral">
+    <nav className="text-neutral">
       <div className="navbar bg-base-200 border-b">
         <div className="navbar-start">
           <div className="dropdown">

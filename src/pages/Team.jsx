@@ -6,7 +6,7 @@ import Timeline from "../components/Timeline";
 export default function Team() {
   return (
     <>
-      <section id="team" className="mx-28 max-w-screen mb-36">
+      <section id="team" className="mx-28 max-w-screen mb-36 mt-10">
         <h1 className="text-4xl font-aileron font-bold text-center text-error">
           Notre équipe de choc
         </h1>
