@@ -7,7 +7,7 @@ export default {
       fontFamily: {
         aileron: ['Aileron', 'sans-serif'],
         lovelace: ['Lovelace', 'serif'],
-        poppins: ['Poppins', 'sans-serif']
+        poppins: ['Poppins', 'sans-serif'],
     }, 
     width: {
       '128': '32rem',
