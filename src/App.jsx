@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Footer from "./components/Footer";
-import Hero from "./components/Hero";
+import Home from "./pages/Home";
 import NotFoundPage from "./pages/NotFoundPage";
 import IWantToTravel from "./pages/IWantToTravel";
 import Concept from "./pages/Concept";
@@ -17,7 +17,7 @@ export default function App() {
     <>
       <Navbar />
       <Routes>
-        <Route path= "/" element={<Hero />} />
+        <Route path= "/" element={<Home />} />
         <Route path= "*" element={<NotFoundPage />} />
         <Route path= "/i-want-to-travel" element={<IWantToTravel />} />
         <Route path= "/concept" element={<Concept />} />
