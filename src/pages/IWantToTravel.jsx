@@ -105,7 +105,7 @@ export default function IWantToTravel() {
         id="form"
         className="py-20 text-neutral bg-base-100 bg-opacity-65"
       >
-        <h1 className="text-4xl font-bold text-center">
+        <h1 className="text-4xl font-aileron font-bold text-center">
           Créez votre voyage sur mesure
         </h1>
         <p className="text-center font-lovelace text-lg max-w-4xl mx-auto my-10">
@@ -117,7 +117,7 @@ export default function IWantToTravel() {
           className="max-w-4xl mx-auto my-10 bg-base-200 p-6 rounded-lg shadow-lg"
           onSubmit={handleSubmit}
         >
-          <h2 className="text-2xl font-bold mb-6">Faîtes créer votre voyage</h2>
+          <h2 className="text-2xl font-aileron font-bold mb-6">Faîtes créer votre voyage</h2>
           <div>
             <Select
               label="Destination *"
@@ -182,7 +182,7 @@ export default function IWantToTravel() {
               ></textarea>
             </div>
           </div>
-          <h2 className="text-xl font-bold mt-6 mb-4">
+          <h2 className="text-xl font-aileron font-bold mt-6 mb-4">
             Vos informations personnelles
           </h2>
           <div className="grid grid-cols-2 gap-6">

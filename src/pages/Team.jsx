@@ -7,7 +7,7 @@ export default function Team() {
   return (
     <>
       <section id="team" className="mx-28 max-w-screen mb-36">
-        <h1 className="text-4xl font-aileron text-center text-error">
+        <h1 className="text-4xl font-aileron font-bold text-center text-error">
           Notre équipe de choc
         </h1>
         <p className="text-center text-lg py-6 font-lovelace text-error">
