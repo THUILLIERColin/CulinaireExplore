@@ -66,7 +66,7 @@ export default function Contact() {
               Vous avez un <strong>projet de voyage particulier</strong> ? Une{" "}
               <strong>demande spécifique</strong> ?
               <br />
-              Vous pouvez nous écrire par email, prendre RDV pour que l&apos;on
+              Vous pouvez nous écrire par <strong>email, prendre RDV</strong> pour que l&apos;on
               vous appelle (téléphone) ou bien formuler une demande de devis
               ci-dessous :
             </p>
