@@ -90,7 +90,7 @@ export default function IWantToTravel() {
       email,
     };
 
-    localStorage.setItem("travelData", JSON.stringify(data));
+    sessionStorage.setItem("travelData", JSON.stringify(data));
 
     // Redirection vers la page avec indication de succès
     navigate("/?success=true");
