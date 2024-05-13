@@ -3,6 +3,7 @@ import SuccessModal from "./SuccessModal";
 import { useEffect, useState } from "react";
 import { IoAirplaneOutline } from "react-icons/io5";
 import Aos from "aos";
+import "aos/dist/aos.css";
 
 export default function Hero() {
   const location = useLocation();
@@ -20,7 +21,6 @@ export default function Hero() {
 
   useEffect(() => {
     Aos.init({ duration: 2000 });
-
     if (success) {
       const modal = document.getElementById("success_order");
       modal.showModal();
