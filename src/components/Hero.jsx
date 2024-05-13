@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import SuccessModal from "./SuccessModal";
 import { useEffect, useState } from "react";
 import { IoAirplaneOutline } from "react-icons/io5";
-
+import Aos from "aos";
 
 export default function Hero() {
   const location = useLocation();
@@ -19,6 +19,8 @@ export default function Hero() {
   });
 
   useEffect(() => {
+    Aos.init({ duration: 2000 });
+
     if (success) {
       const modal = document.getElementById("success_order");
       modal.showModal();
@@ -46,10 +48,10 @@ export default function Hero() {
         <div className="pb-80 pt-16 h-screen sm:pb-40 sm:pt-24 lg:pb-48 lg:pt-40 lg:h-auto">
           <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
             <div className="sm:max-w-lg">
-              <h1 className="text-4xl tracking-tight font-aileron font-bold text-neutral sm:text-6xl">
+              <h1 data-aos="fade-up" className="text-4xl tracking-tight font-aileron font-bold text-neutral sm:text-6xl">
                 It&apos;s time to travel!
               </h1>
-              <p className="mt-4 text-xl text-neutral font-lovelace">
+              <p data-aos="fade-up" className="mt-4 text-xl text-neutral font-lovelace">
                 Direction le{" "}
                 <IoAirplaneOutline className="inline-block w-10 h-10" />{" "}
                 plaisir
@@ -136,7 +138,7 @@ export default function Hero() {
                   </div>
                 </div>
 
-                <Link
+                <Link data-aos="fade-up"
                   to="/i-want-to-travel"
                   className="inline-block rounded-md border border-transparent bg-primary px-8 py-3 text-center font-medium text-white hover:opacity-80"
                 >
