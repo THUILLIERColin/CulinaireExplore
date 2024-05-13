@@ -29,7 +29,7 @@ export default function Hero() {
       )}
       {/* Navigation prioritaire sur la séléction */}
       <div className="relative overflow-hidden">
-        <div className="pb-80 pt-16 sm:pb-40 sm:pt-24 lg:pb-48 lg:pt-40">
+        <div className="pb-80 pt-16 h-screen sm:pb-40 sm:pt-24 lg:pb-48 lg:pt-40 lg:h-auto">
           <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
             <div className="sm:max-w-lg">
               <h1 className="text-4xl tracking-tight font-aileron font-bold text-neutral sm:text-6xl">
@@ -54,7 +54,7 @@ export default function Hero() {
                   <div className="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
                     <div className="flex items-center space-x-6 lg:space-x-8">
                       <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
-                        <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
+                        <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-100">
                           <img
                             src="https://images.unsplash.com/photo-1659333377868-308305e24aa8?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                             alt="Restaurant Grecque"
@@ -70,7 +70,7 @@ export default function Hero() {
                         </div>
                       </div>
                       <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
-                        <div className="h-64 w-44 overflow-hidden rounded-lg">
+                        <div className="h-64 w-44 overflow-hidden opacity-0 sm:opacity-100 rounded-lg">
                           <img
                             src="https://images.unsplash.com/photo-1589704379319-3b83010f661e?q=80&w=2061&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                             alt="Restaurant Espagnol"
@@ -114,7 +114,7 @@ export default function Hero() {
 
                 <Link
                   to="/i-want-to-travel"
-                  className="btn-primary inline-block rounded-md border border-transparent px-8 py-3 text-center font-medium bg-primary hover:opacity-75"
+                  className="inline-block rounded-md border border-transparent bg-primary px-8 py-3 text-center font-medium text-white hover:opacity-80"
                 >
                   Reservez d&egrave;s maintenant !
                 </Link>

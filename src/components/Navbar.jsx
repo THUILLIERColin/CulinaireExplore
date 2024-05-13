@@ -1,16 +1,14 @@
 import { Link } from "react-router-dom";
 import PropType from "prop-types";
-import logo from "../assets/img/logo.png";
+import logo from "../assets/img/logo.png"
 import ToogleTheme from "./ToogleTheme";
 
 Navbar.propTypes = {
   margin: PropType.string,
 };
 
-export default function Navbar() {
-  // Fonction pour fermer <details>
-  const closeDetails = (e) => {
-    // Trouve le parent <details> le plus proche et le ferme
+export default function Navbar() {  
+  const aboutDesktopNav = (e) => {
     const details = e.target.closest('details');
     if (details) {
       details.open = false;
@@ -38,6 +36,35 @@ export default function Navbar() {
                 />
               </svg>
             </div>
+            <ul
+              id="aboutMobileNav"
+              tabIndex={0}
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 font-poppins rounded-box w-52"
+            >
+              <li>
+                <Link to="/i-want-to-travel">Je veux voyager</Link>
+              </li>
+              <li>
+                <a>Qui sommes nous ?</a>
+                <ul className="p-2">
+                  <li>
+                    <Link to="/concept">Notre concept</Link>
+                  </li>
+                  <li>
+                    <Link to="/team">Notre &eacute;quipe</Link>
+                  </li>
+                  <li>
+                    <Link to="/commitment">Nos engagements</Link>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <Link to="/how-it-works">Comment &ccedil;a marche ?</Link>
+              </li>
+              <li>
+                <Link to="/contact">Nous contacter</Link>
+              </li>
+            </ul>
           </div>
           <Link to="/" className="btn btn-ghost text-xl">
             <img src={logo} alt="Logo" className="w-10 h-10 rounded-lg" />
@@ -49,17 +76,20 @@ export default function Navbar() {
               <Link to="/i-want-to-travel">Je veux voyager</Link>
             </li>
             <li>
-              <details>
+              <details id="aboutDesktopNav">
                 <summary>Qui sommes nous ?</summary>
                 <ul className="p-2">
                   <li>
-                    <Link to="/concept" onClick={closeDetails}>Notre concept</Link>
+                    <Link to="/concept" onClick={aboutDesktopNav}
+                    >Notre concept</Link>
                   </li>
                   <li>
-                    <Link to="/team" onClick={closeDetails}>Notre &eacute;quipe</Link>
+                    <Link to="/team" onClick={aboutDesktopNav}
+                    >Notre &eacute;quipe</Link>
                   </li>
                   <li>
-                    <Link to="/commitment" onClick={closeDetails}>Nos engagements</Link>
+                    <Link to="/commitment"  onClick={aboutDesktopNav}
+                    >Nos engagements</Link>
                   </li>
                 </ul>
               </details>
