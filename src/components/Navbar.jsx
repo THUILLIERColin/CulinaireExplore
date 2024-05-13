@@ -7,16 +7,7 @@ Navbar.propTypes = {
   margin: PropType.string,
 };
 
-export default function Navbar() {
-  const aboutMobileNav = (e) => {
-    const aboutMobileNav = e.target.closest('ul');
-    if (aboutMobileNav) {
-      aboutMobileNav.style.display = 'none';
-      return;
-    }
-    aboutMobileNav.style.display = 'block';
-  };
-  
+export default function Navbar() {  
   const aboutDesktopNav = (e) => {
     const details = e.target.closest('details');
     if (details) {
@@ -51,33 +42,27 @@ export default function Navbar() {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 font-poppins rounded-box w-52"
             >
               <li>
-                <Link to="/i-want-to-travel" onClick={aboutMobileNav}
-                >Je veux voyager</Link>
+                <Link to="/i-want-to-travel">Je veux voyager</Link>
               </li>
               <li>
                 <a>Qui sommes nous ?</a>
                 <ul className="p-2">
                   <li>
-                    <Link to="/concept" onClick={aboutMobileNav}
-                    >Notre concept</Link>
+                    <Link to="/concept">Notre concept</Link>
                   </li>
                   <li>
-                    <Link to="/team" onClick={aboutMobileNav}
-                    >Notre &eacute;quipe</Link>
+                    <Link to="/team">Notre &eacute;quipe</Link>
                   </li>
                   <li>
-                    <Link to="/commitment" onClick={aboutMobileNav}
-                    >Nos engagements</Link>
+                    <Link to="/commitment">Nos engagements</Link>
                   </li>
                 </ul>
               </li>
               <li>
-                <Link to="/how-it-works" onClick={aboutMobileNav}
-                >Comment &ccedil;a marche ?</Link>
+                <Link to="/how-it-works">Comment &ccedil;a marche ?</Link>
               </li>
               <li>
-                <Link to="/contact" onClick={aboutMobileNav}
-                >Nous contacter</Link>
+                <Link to="/contact">Nous contacter</Link>
               </li>
             </ul>
           </div>

@@ -114,7 +114,7 @@ export default function Hero() {
 
                 <Link
                   to="/i-want-to-travel"
-                  className="inline-block rounded-md border border-transparent bg-primary px-8 py-3 text-center font-medium text-white hover:bg-indigo-700"
+                  className="inline-block rounded-md border border-transparent bg-primary px-8 py-3 text-center font-medium text-white hover:opacity-80"
                 >
                   Reservez d&egrave;s maintenant !
                 </Link>
