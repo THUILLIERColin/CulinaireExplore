@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { useState } from 'react';
 
 SplitScreen.propTypes = {
   title: PropTypes.string,
@@ -9,6 +10,8 @@ SplitScreen.propTypes = {
 };
 
 export default function SplitScreen({ title, sourceImage, altImage, children, imagePosition }) {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
   // Gérer la classe en fonction de la position de l'image
   const imageOrderClass = imagePosition === 'right' ? 'lg:flex-row-reverse' : 'lg:flex-row';
 
@@ -24,12 +27,14 @@ export default function SplitScreen({ title, sourceImage, altImage, children, im
         <div className="card w-full max-w-xl h-full">
           <div className="card-body">
             <div id="image" className="rounded-lg size-80 bg-cover bg-center m-4">
-                <img
-                    src={sourceImage}
-                    alt={altImage}
-                    loading='lazy'
-                    className="rounded-lg w-128 h-128 object-cover"
-                />
+                {!imageLoaded && <div className="skeleton w-80 h-96"></div>}
+                    <img
+                        src={sourceImage}
+                        alt={altImage}
+                        className="rounded-lg w-80 h-96 object-cover"
+                        onLoad={() => setImageLoaded(true)}
+                        style={{ display: imageLoaded ? 'block' : 'none' }}
+                    />
             </div>
           </div>
         </div>
