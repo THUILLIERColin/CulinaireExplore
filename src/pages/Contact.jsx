@@ -1,8 +1,4 @@
-import {
-  PhoneIcon,
-  MapPinIcon,
-  EnvelopeIcon,
-} from "@heroicons/react/24/outline";
+import { FiPhone, FiMail, FiMapPin } from "react-icons/fi";
 
 export default function Contact() {
   return (
@@ -26,7 +22,7 @@ export default function Contact() {
               href="tel:+33 3 54 33 27 02"
               className="flex flex-col items-center p-5 shadow-lg rounded-lg bg-base-100"
             >
-              <PhoneIcon className="h-10 w-10 text-neutral" />
+              <FiPhone className="h-10 w-10 text-neutral" />
               <h2 className="font-bold font-aileron text-neutral text-lg mt-2">
                 T&eacute;l&eacute;phone
               </h2>
@@ -38,7 +34,7 @@ export default function Contact() {
               href="mailto:contact@culinaire.fr"
               className="flex flex-col items-center p-5 shadow-lg rounded-lg bg-base-100"
             >
-              <EnvelopeIcon className="h-10 w-10 text-neutral" />
+              <FiMail className="h-10 w-10 text-neutral" />
               <h2 className="font-bold font-aileron text-neutral text-lg mt-2">
                 Email
               </h2>
@@ -51,7 +47,7 @@ export default function Contact() {
               target="_blank"
               className="flex flex-col items-center p-5 shadow-lg rounded-lg bg-base-100"
             >
-              <MapPinIcon className="h-10 w-10 text-neutral" />
+              <FiMapPin className="h-10 w-10 text-neutral" />
               <h2 className="font-bold font-aileron text-neutral text-lg mt-2">
                 Adresse
               </h2>

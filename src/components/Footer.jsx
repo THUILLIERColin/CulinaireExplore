@@ -1,8 +1,8 @@
 import logoAndText from "../assets/img/logoAndText.png";
 import { Link } from "react-router-dom";
-import heart from "../assets/svg/heart.svg";
-import x from "../assets/svg/x.svg";
-import instagram from "../assets/svg/instagram.svg";
+import { FaRegHeart } from "react-icons/fa";
+import { RiTwitterXLine } from "react-icons/ri";
+import { AiFillInstagram } from "react-icons/ai";
 
 export default function Footer() {
   return (
@@ -66,10 +66,10 @@ export default function Footer() {
             </Link>
             <div className="grid grid-flow-col gap-4">
               <a href="https://www.twitter.com" target="_blank">
-                <img src={x} alt="Twitter" className="w-6 h-6" />
+                <RiTwitterXLine className="w-6 h-6" />
               </a>
               <a href="https://www.instagram.com" target="_blank">
-                <img src={instagram} alt="Instagram" className="w-6 h-6" />
+                <AiFillInstagram className="w-6 h-6" />
               </a>
               <a>
                 <svg
@@ -89,7 +89,7 @@ export default function Footer() {
         {/* flex-col lg:flex-row items-center justify-between */}
         <div className="footer-bottom grid grid-cols-1 lg:grid-cols-3 gap-4 items-center justify-between">
           <p className="font-aileron mr-4 text-center lg:text-left">
-            <img src={heart} alt="Coeur" className="w-5 h-6 inline-block" />
+            <FaRegHeart className="w-5 h-6 inline-block" />
             &nbsp;Fait avec passion &agrave; Nancy
           </p>
           <p className="text-center font-aileron">

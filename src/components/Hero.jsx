@@ -1,7 +1,8 @@
-import airplane from "../assets/svg/airplane.svg";
 import { Link, useLocation } from "react-router-dom";
 import SuccessModal from "./SuccessModal";
 import { useEffect, useState } from "react";
+import { IoAirplaneOutline } from "react-icons/io5";
+
 
 export default function Hero() {
   const location = useLocation();
@@ -50,11 +51,7 @@ export default function Hero() {
               </h1>
               <p className="mt-4 text-xl text-neutral font-lovelace">
                 Direction le{" "}
-                <img
-                  src={airplane}
-                  alt="Avion"
-                  className="w-10 h-10 inline-block"
-                />{" "}
+                <IoAirplaneOutline className="inline-block w-10 h-10" />{" "}
                 plaisir
               </p>
             </div>
