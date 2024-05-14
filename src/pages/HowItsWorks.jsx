@@ -1,7 +1,9 @@
+import KownUs from "../components/KownUs";
+
 export default function HowItsWorks() {
   return (
     <>
-    HowItsWorks
+    <KownUs />
     </>
   )
 }

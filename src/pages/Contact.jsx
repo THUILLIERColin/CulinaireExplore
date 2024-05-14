@@ -20,7 +20,7 @@ export default function Contact() {
             {/* Phone Card */}
             <a
               href="tel:+33 3 54 33 27 02"
-              className="flex flex-col items-center p-5 shadow-lg rounded-lg bg-base-100"
+              className="flex flex-col items-center p-5 shadow-lg rounded-lg bg-base-100 transition transform hover:translate-x-1 hover:translate-y-[-0.25rem] hover:shadow-2xl"
             >
               <FiPhone className="h-10 w-10 text-neutral" />
               <h2 className="font-bold font-aileron text-neutral text-lg mt-2">
@@ -32,7 +32,7 @@ export default function Contact() {
             {/* Email Card */}
             <a
               href="mailto:contact@culinaire.fr"
-              className="flex flex-col items-center p-5 shadow-lg rounded-lg bg-base-100"
+              className="flex flex-col items-center p-5 shadow-lg rounded-lg bg-base-100 transition transform hover:translate-x-1 hover:translate-y-[-0.25rem] hover:shadow-2xl"
             >
               <FiMail className="h-10 w-10 text-neutral" />
               <h2 className="font-bold font-aileron text-neutral text-lg mt-2">
@@ -45,7 +45,7 @@ export default function Contact() {
             <a
               href="http://maps.google.com/?q=8 Rue des Cinq-Piquets, Nancy, 54000, France"
               target="_blank"
-              className="flex flex-col items-center p-5 shadow-lg rounded-lg bg-base-100"
+              className="flex flex-col items-center p-5 shadow-lg rounded-lg bg-base-100 transition transform hover:translate-x-1 hover:translate-y-[-0.25rem] hover:shadow-2xl"
             >
               <FiMapPin className="h-10 w-10 text-neutral" />
               <h2 className="font-bold font-aileron text-neutral text-lg mt-2">
@@ -62,9 +62,11 @@ export default function Contact() {
               Vous avez un <strong>projet de voyage particulier</strong> ? Une{" "}
               <strong>demande spécifique</strong> ?
               <br />
-              Vous pouvez nous écrire par <strong>email, prendre RDV</strong> pour que l&apos;on
-              vous appelle (téléphone) ou bien formuler une demande de devis
-              ci-dessous :
+              Vous pouvez nous écrire par <strong>
+                email, prendre RDV
+              </strong>{" "}
+              pour que l&apos;on vous appelle (téléphone) ou bien formuler une
+              demande de devis ci-dessous :
             </p>
           </div>
         </div>
