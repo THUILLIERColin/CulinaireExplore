@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
+import OurTeam from "../assets/img/bento_our-team.png";
+import IWantToTravel from "../assets/img/bento_i-want-to-travel.jpeg";
+import HowItWorks from "../assets/img/bento_how-it-works.png";
+
 Bento.propTypes = {
     dataAos: PropTypes.string.isRequired,
     };
@@ -16,45 +20,45 @@ export default function Bento({ dataAos }) {
                 className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow"
               >
                 <img
-                  src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="Wines"
+                  src={IWantToTravel}
+                  alt="I want to travel"
                   className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                <h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
+                <h3 className="z-10 text-2xl font-aileron text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
                   Je veux voyager
                 </h3>
               </Link>
             </div>
             <div className="col-span-2 sm:col-span-1 md:col-span-2">
-              <a
-                href=""
+              <Link
+                to="/team"
                 className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 mb-4"
               >
                 <img
-                  src="https://images.unsplash.com/photo-1504675099198-7023dd85f5a3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="Gin"
+                  src={OurTeam}
+                  alt="Our team"
                   className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                <h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
-                  Gin
+                <h3 className="z-10 text-2xl font-aileron text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
+                  Notre équipe
                 </h3>
-              </a>
-              <a
-                href=""
+              </Link>
+              <Link
+                to="/how-it-works"
                 className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40"
               >
                 <img
-                  src="https://images.unsplash.com/photo-1571104508999-893933ded431?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="Vodka and Whiskey"
+                  src={HowItWorks}
+                  alt="How it works"
                   className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                <h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
-                  Vodka and Whiskey
+                <h3 className="z-10 text-2xl font-aileron text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
+                  Comment ça marche ?
                 </h3>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
