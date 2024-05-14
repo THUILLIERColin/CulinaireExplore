@@ -1,4 +1,6 @@
 import { Routes, Route } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 import "./App.css";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -13,6 +15,12 @@ import TermsOfSale from "./pages/TermsOfSale";
 import Navbar from "./components/Navbar";
 
 export default function App() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  
   return (
     <>
       <Navbar />
