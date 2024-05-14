@@ -98,7 +98,7 @@ export default function IWantToTravel() {
 
   return (
     <div
-      className="bg-cover bg-center bg-no-repeat"
+      className="bg-cover bg-center bg-fixed"
       style={{ backgroundImage: `url(${worldBackground})` }}
     >
       <section
