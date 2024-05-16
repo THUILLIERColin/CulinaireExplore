@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import SuccessModal from "./SuccessModal";
+import AlertModal from "../../components/ui/AlertModal";
 import { useEffect, useState } from "react";
 import { IoAirplaneOutline } from "react-icons/io5";
 import Aos from "aos";
@@ -39,8 +39,9 @@ export default function Hero() {
   return (
     <>
       {success && (
-        <SuccessModal
+        <AlertModal
           id="success_order"
+          state="success"
           description="Pr&eacute;parez-vous &agrave; voyager votre demande a &eacute;t&eacute; enregistr&eacute;e"
         />
       )}

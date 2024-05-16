@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import Select from "../components/forms/Select";
-import NumberPicker from "../components/forms/NumberPicker";
-import europeanCountries from "../data/countries.json";
+import Select from "../../components/forms/Select";
+import NumberPicker from "../../components/forms/NumberPicker";
+import europeanCountries from "../../data/countries.json";
 import { useNavigate } from "react-router-dom";
-import worldBackground from "../assets/svg/world.svg";
+import worldBackground from "../../assets/svg/world.svg";
 
 export default function IWantToTravel() {
   let navigate = useNavigate();

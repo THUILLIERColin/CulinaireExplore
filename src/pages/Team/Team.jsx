@@ -1,7 +1,7 @@
-import SplitScreen from "../components/SplitScreen";
-import Valentine from "../assets/img/ValentineTHUILLIER.jpg";
-import Rose from "../assets/img/RoseMANCHERON.jpg";
-import Timeline from "../components/Timeline";
+import SplitScreen from "../../components/ui/SplitScreen";
+import Valentine from "../../assets/img/ValentineTHUILLIER.jpg";
+import Rose from "../../assets/img/RoseMANCHERON.jpg";
+import Timeline from "../../components/ui/Timeline/Timeline";
 
 export default function Team() {
   return (
