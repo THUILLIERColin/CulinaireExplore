@@ -40,7 +40,7 @@ export default function Team() {
             </p>
             <p className="pb-2">
               Je crois fermement en{" "}
-              <strong>l&apos;honnêtet&eacute;, la transparence</strong> et le
+              <strong>l&apos;honnêtet&eacute;, la transparence</strong> et le{" "}
               <strong>travail acharn&eacute;</strong>, et je m&apos;efforce de
               les int&eacute;grer dans tous les aspects de ma vie
               professionnelle et personnelle.
@@ -76,9 +76,9 @@ export default function Team() {
               .
             </p>
             <p className="pb-2">
-              Issu d&apos;une formation en <strong>gestion de PME</strong>,
+              Issue d&apos;une formation en <strong>gestion de PME</strong>,
               j&apos;ai appris l&apos;importance de la <strong>rigueur</strong>,
-              de <strong>l&apos;organisation</strong> et de la
+              de <strong>l&apos;organisation</strong> et de la{" "}
               <strong>pr&eacute;cision</strong>, des valeurs que je
               m&apos;efforce d&apos;appliquer au quotidien dans mes projets
               professionnels et personnels.
@@ -88,7 +88,7 @@ export default function Team() {
               d&apos;une <strong>troupe de th&eacute;&acirc;tre</strong> qui m&apos;a
               permis de d&eacute;velopper des qualit&eacute;s telles que{" "}
               <strong>l&apos;ouverture aux autres</strong>, la{" "}
-              <strong>communication efficace</strong>
+              <strong>communication efficace</strong>{" "}
               et <strong>la gestion du stress</strong>. Mon temps libre est
               &eacute;galement d&eacute;di&eacute; &agrave; la cr&eacute;ation
               d’albums photos et &agrave; mes proches, avec qui je partage des
