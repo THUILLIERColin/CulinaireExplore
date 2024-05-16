@@ -5,73 +5,8 @@ import Bento from "../../components/ui/Bento";
 import Hero from "./Hero";
 import EngagementItem from "../../components/ui/EngagementItem";
 
-import OurTeam from "../../assets/img/bento_our-team.png";
-import IWantToTravel from "../../assets/img/bento_i-want-to-travel.jpeg";
-import HowItWorks from "../../assets/img/bento_how-it-works.png";
-
-import { FaRegEye, FaClipboardList, FaDollarSign, FaSuitcaseRolling, FaUmbrella, FaBook, FaHeadset } from 'react-icons/fa';
-
-const engagements = [
-  {
-    Icon: FaRegEye,
-    title: "L’expertise",
-    subTitle: "Quelle que soit la destination, vous avez l’assurance de bénéficier de l’expertise d’un spécialiste qui aura à cœur de partager ses connaissances du terrain pour organiser votre voyage.",
-  },
-  {
-    Icon: FaClipboardList,
-    title: "Le sur-mesure",
-    subTitle: "Votre créateur de voyage prend un soin tout particulier à vous écouter pour définir votre projet et personnaliser votre voyage suivant vos souhaits et vos envies.",
-  },
-  {
-    Icon: FaDollarSign,
-    title: "Les prix",
-    subTitle: "Les prix de nos voyages sont tous étudiés au plus juste. Nous les vendons en direct et pratiquons des niveaux de marge modérés.",
-  },
-  {
-    Icon: FaSuitcaseRolling,
-    title: "Des voyages tout compris",
-    subTitle: "Pas de mauvaises surprises : nos prix détaillent très clairement les prestations qui vous sont proposées et incluent toutes les taxes et les frais de dossiers éventuels.",
-  },
-  {
-    Icon: FaUmbrella,
-    title: "La garantie financière",
-    subTitle: "Vous partez en toute tranquillité puisque vous bénéficiez de la garantie financière APST des Tour-Opérateurs français.",
-  },
-  {
-    Icon: FaBook,
-    title: "Le carnet de voyage",
-    subTitle: "Avant votre départ, nous vous remettons votre carnet de voyage personnalisé : il détaille l’ensemble de votre programme.",
-  },
-  {
-    Icon: FaHeadset,
-    title: "L’assistance 24/24",
-    subTitle: "Pendant tout votre séjour, vous bénéficiez d’une assistance 24 heures sur 24 en France comme à destination.",
-  },
-];
-
-const bento = [
-  {
-    id: 1,
-    title: "Je veux voyager",
-    img: IWantToTravel,
-    alt: "I want to travel",
-    link: "/i-want-to-travel",
-  },
-  {
-    id: 2,
-    title: "Notre équipe",
-    img: OurTeam,
-    alt: "Our team",
-    link: "/team",
-  },
-  {
-    id: 3,
-    title: "Comment ça marche ?",
-    img: HowItWorks,
-    alt: "How it works",
-    link: "/how-it-works",
-  },
-];
+import { bento } from "../../constants/bento";
+import { engagements } from "../../constants/engagements";
 
 export default function Home() {
   useEffect(() => {

@@ -1,6 +1,6 @@
 import SplitScreen from "../../components/ui/SplitScreen";
-import Valentine from "../../assets/img/ValentineTHUILLIER.jpg";
-import Rose from "../../assets/img/RoseMANCHERON.jpg";
+import Valentine from "../../assets/img/pages/team/ValentineTHUILLIER.jpg";
+import Rose from "../../assets/img/pages/team/RoseMANCHERON.jpg";
 import { CiLinkedin } from "react-icons/ci";
 
 export default function Team() {
