@@ -29,7 +29,7 @@ export default function Team() {
               appris l&apos;importance de{" "}
               <strong>l&apos;esprit d&apos;&eacute;quipe</strong>, de{" "}
               <strong>l&apos;entraide</strong> et de la{" "}
-              <strong>r&eacute;solution de problèmes sous pression.</strong>
+              <strong>r&eacute;solution de probl&egrave;mes sous pression.</strong>
             </p>
             <p className="pb-2">
               En dehors du travail, j&apos;aime passer mes dimanches &agrave;
@@ -57,7 +57,7 @@ export default function Team() {
               </a>{" "}
               pour en savoir plus sur mes exp&eacute;riences et mes projets
               professionnels. Je suis impatiente de collaborer avec vous et de
-              contribuer au succès de notre entreprise !
+              contribuer au succ&egrave;s de notre entreprise !
             </p>
           </div>
         </SplitScreen>
@@ -69,8 +69,8 @@ export default function Team() {
         >
           <div className="text-justify">
             <p className="pb-2">
-              Bonjour &agrave; tous ! Je suis Rose, âg&eacute;e de 18 ans, mon
-              parcours atypique m&apos;a d&eacute;j&agrave; permis
+              Bonjour &agrave; tous ! Je suis Rose, &acirc;g&eacute;e de 18
+              ans, mon parcours atypique m&apos;a d&eacute;j&agrave; permis
               d&apos;acqu&eacute;rir des <strong>comp&eacute;tences</strong>{" "}
               pr&eacute;cieuses dans des <strong>domaines vari&eacute;s</strong>
               .
@@ -84,8 +84,8 @@ export default function Team() {
               professionnels et personnels.
             </p>
             <p className="pb-2">
-              Parallèlement &agrave; mon travail, je suis engag&eacute;e au sein
-              d&apos;une <strong>troupe de th&eacute;âtre</strong> qui m&apos;a
+              Parall&egrave;lement &agrave; mon travail, je suis engag&eacute;e au sein
+              d&apos;une <strong>troupe de th&eacute;&acirc;tre</strong> qui m&apos;a
               permis de d&eacute;velopper des qualit&eacute;s telles que{" "}
               <strong>l&apos;ouverture aux autres</strong>, la{" "}
               <strong>communication efficace</strong>
@@ -106,8 +106,8 @@ export default function Team() {
                 <CiLinkedin className="inline-block" /> LinkedIn
               </a>
               . C&apos;est avec enthousiasme que je fais partie de cette
-              &eacute;quipe dynamique, et j&apos;ai hâte de contribuer &agrave;
-              son succès !
+              &eacute;quipe dynamique, et j&apos;ai h&acirc;te de contribuer &agrave;
+              son succ&egrave;s !
             </p>
           </div>
         </SplitScreen>
