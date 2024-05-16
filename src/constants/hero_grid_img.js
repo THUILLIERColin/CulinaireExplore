@@ -1,0 +1,1 @@
+export { default as hero_greek_beach } from "../assets/img/pages/home/hero_greek_beach.avif";
