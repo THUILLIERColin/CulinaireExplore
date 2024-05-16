@@ -4,12 +4,12 @@ export const engagements = [
   {
     Icon: FaRegEye,
     title: "L’expertise",
-    subTitle: "Quelle que soit la destination, vous avez l’assurance de bénéficier de l’expertise d’un spécialiste qui aura à cœur de partager ses connaissances du terrain pour organiser votre voyage.",
+    subTitle: "Peu importe la destination, profitez de l'expertise de nos spécialistes passionnés qui partageront leurs connaissances du terrain pour organiser votre voyage.",
   },
   {
     Icon: FaClipboardList,
     title: "Le sur-mesure",
-    subTitle: "Votre créateur de voyage prend un soin tout particulier à vous écouter pour définir votre projet et personnaliser votre voyage suivant vos souhaits et vos envies.",
+    subTitle: "Nos créateurs de voyage écoutent attentivement vos désirs pour concevoir et personnaliser un voyage qui répond parfaitement à vos attentes.",
   },
   {
     Icon: FaDollarSign,
@@ -19,21 +19,21 @@ export const engagements = [
   {
     Icon: FaSuitcaseRolling,
     title: "Des voyages tout compris",
-    subTitle: "Pas de mauvaises surprises : nos prix détaillent très clairement les prestations qui vous sont proposées et incluent toutes les taxes et les frais de dossiers éventuels.",
+    subTitle: "Pas de mauvaises surprises : nos tarifs détaillent clairement les prestations qui vous sont proposées et incluent toutes les taxes et les frais de dossiers éventuels.",
   },
   {
     Icon: FaUmbrella,
     title: "La garantie financière",
-    subTitle: "Vous partez en toute tranquillité puisque vous bénéficiez de la garantie financière APST des Tour-Opérateurs français.",
+    subTitle: "Voyagez l'esprit tranquille grâce à la garantie financière APST des Tour-Opérateurs français.",
   },
   {
     Icon: FaBook,
     title: "Le carnet de voyage",
-    subTitle: "Avant votre départ, nous vous remettons votre carnet de voyage personnalisé : il détaille l’ensemble de votre programme.",
+    subTitle: "Avant votre départ, recevez votre carnet de voyage personnalisé, détaillant l'intégralité de votre programme.",
   },
   {
     Icon: FaHeadset,
     title: "L’assistance 24/24",
-    subTitle: "Pendant tout votre séjour, vous bénéficiez d’une assistance 24 heures sur 24 en France comme à destination.",
+    subTitle: "Bénéficiez d'une assistance disponible 24 heures sur 24, tant en France qu'à votre destination, tout au long de votre séjour.",
   },
 ];
