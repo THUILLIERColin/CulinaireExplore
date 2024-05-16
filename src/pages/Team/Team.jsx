@@ -1,18 +1,17 @@
 import SplitScreen from "../../components/ui/SplitScreen";
 import Valentine from "../../assets/img/ValentineTHUILLIER.jpg";
 import Rose from "../../assets/img/RoseMANCHERON.jpg";
-import Timeline from "../../components/ui/Timeline/Timeline";
+import { CiLinkedin } from "react-icons/ci";
 
 export default function Team() {
   return (
     <>
       <section id="team" className="mx-28 max-w-screen mb-36 mt-10">
-        <h1 className="text-4xl font-aileron font-bold text-center text-error">
-          Notre équipe de choc
+        <h1 className="text-6xl font-aileron font-bold text-neutral text-center">
+          Notre &eacute;quipe de choc
         </h1>
-        <p className="text-center text-lg py-6 font-lovelace text-error">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod
+        <p className="text-center text-xl text-neutral py-6 font-lovelace">
+          D&eacute;couvrez les visages derri&egrave;re notre entreprise
         </p>
         <SplitScreen
           title="Valentine THUILLIER"
@@ -20,14 +19,46 @@ export default function Team() {
           altImage="Profile picture of Valentine THUILLIER"
           imagePosition="left"
         >
-          <div className="text-error">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-          quas minima dignissimos veniam consequatur at saepe nostrum vero,
-          culpa laudantium ducimus maxime sequi odio adipisci dicta quam,
-          eveniet tempora dolorum. Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Fuga, quibusdam. Consectetur facere esse, eum
-          dolores aperiam beatae laborum eligendi cum quasi magnam accusantium,
-          in placeat quod voluptate iure quas! Ipsam?
+          <div className="text-justify">
+            <p className="pb-2">
+              Bonjour cher(e)s voyageurs ! Je suis Valentine, une
+              professionnelle diplôm&eacute;e en <strong>gestion de PME</strong>
+              . &Agrave; 20 ans, j&apos;ai d&eacute;j&agrave; acquis une
+              exp&eacute;rience pr&eacute;cieuse en tant que{" "}
+              <strong>sapeur-pompier volontaire</strong>, o&ugrave; j&apos;ai
+              appris l&apos;importance de{" "}
+              <strong>l&apos;esprit d&apos;&eacute;quipe</strong>, de{" "}
+              <strong>l&apos;entraide</strong> et de la{" "}
+              <strong>r&eacute;solution de problèmes sous pression.</strong>
+            </p>
+            <p className="pb-2">
+              En dehors du travail, j&apos;aime passer mes dimanches &agrave;
+              jouer en famille et cuisiner avec mon ch&eacute;ri. J&apos;ai
+              &eacute;galement un compagnon f&eacute;lin, un adorable chat
+              pr&eacute;nomm&eacute; Caramel et une tortue d&apos;eau
+              appel&eacute; Franklin.
+            </p>
+            <p className="pb-2">
+              Je crois fermement en{" "}
+              <strong>l&apos;honnêtet&eacute;, la transparence</strong> et le
+              <strong>travail acharn&eacute;</strong>, et je m&apos;efforce de
+              les int&eacute;grer dans tous les aspects de ma vie
+              professionnelle et personnelle.
+            </p>
+            <p className="pb-2">
+              N&apos;h&eacute;sitez pas &agrave; me suivre sur{" "}
+              <a
+                href="https://www.linkedin.com/in/valentine-thuillier-623899264/"
+                target="_blank"
+                rel="noreferrer"
+                className="font-bold italic"
+              >
+                <CiLinkedin className="inline-block" /> LinkedIn
+              </a>{" "}
+              pour en savoir plus sur mes exp&eacute;riences et mes projets
+              professionnels. Je suis impatiente de collaborer avec vous et de
+              contribuer au succès de notre entreprise !
+            </p>
           </div>
         </SplitScreen>
         <SplitScreen
@@ -36,42 +67,50 @@ export default function Team() {
           altImage="Profile picture of Rose MANCHERON"
           imagePosition="right"
         >
-          <div className="text-error">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum iure
-          harum iusto ex earum cumque dignissimos illo, molestiae debitis omnis
-          quis! Dicta adipisci aspernatur vero deserunt, enim quae inventore
-          sequi? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam
-          doloribus, voluptate voluptatibus praesentium aperiam pariatur veniam,
-          excepturi at hic inventore similique vel sint consequuntur dolor
-          tenetur non quisquam perferendis repellat.
+          <div className="text-justify">
+            <p className="pb-2">
+              Bonjour &agrave; tous ! Je suis Rose, âg&eacute;e de 18 ans, mon
+              parcours atypique m&apos;a d&eacute;j&agrave; permis
+              d&apos;acqu&eacute;rir des <strong>comp&eacute;tences</strong>{" "}
+              pr&eacute;cieuses dans des <strong>domaines vari&eacute;s</strong>
+              .
+            </p>
+            <p className="pb-2">
+              Issu d&apos;une formation en <strong>gestion de PME</strong>,
+              j&apos;ai appris l&apos;importance de la <strong>rigueur</strong>,
+              de <strong>l&apos;organisation</strong> et de la
+              <strong>pr&eacute;cision</strong>, des valeurs que je
+              m&apos;efforce d&apos;appliquer au quotidien dans mes projets
+              professionnels et personnels.
+            </p>
+            <p className="pb-2">
+              Parallèlement &agrave; mon travail, je suis engag&eacute;e au sein
+              d&apos;une <strong>troupe de th&eacute;âtre</strong> qui m&apos;a
+              permis de d&eacute;velopper des qualit&eacute;s telles que{" "}
+              <strong>l&apos;ouverture aux autres</strong>, la{" "}
+              <strong>communication efficace</strong>
+              et <strong>la gestion du stress</strong>. Mon temps libre est
+              &eacute;galement d&eacute;di&eacute; &agrave; la cr&eacute;ation
+              d’albums photos et &agrave; mes proches, avec qui je partage des
+              moments pr&eacute;cieux et enrichissants.
+            </p>
+            <p className="pb-2">
+              Si vous souhaitez en savoir plus sur mon parcours professionnel et
+              mes projets futurs, je vous invite &agrave; me suivre sur{" "}
+              <a
+                href="https://www.linkedin.com/in/rose-mancheron-a4542227a/"
+                target="_blank"
+                rel="noreferrer"
+                className="font-bold italic"
+              >
+                <CiLinkedin className="inline-block" /> LinkedIn
+              </a>
+              . C&apos;est avec enthousiasme que je fais partie de cette
+              &eacute;quipe dynamique, et j&apos;ai hâte de contribuer &agrave;
+              son succès !
+            </p>
           </div>
         </SplitScreen>
-      </section>
-      <section id="timeline" className="text-error">
-        <Timeline
-          title="Titre de la timeline"
-          introText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-          steps={[
-            {
-              number: "1",
-              title: "Étape 1",
-              description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            },
-            {
-              number: "2",
-              title: "Étape 2",
-              description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            },
-            {
-              number: "3",
-              title: "Étape 3",
-              description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            },
-          ]}
-        />
       </section>
     </>
   );
