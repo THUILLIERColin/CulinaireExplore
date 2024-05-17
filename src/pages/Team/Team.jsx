@@ -40,7 +40,7 @@ export default function Team() {
           <div className="text-justify text-neutral font-lovelace">
             <p className="pb-2">
               Bonjour cher(e)s voyageurs ! Je suis Valentine, une
-              professionnelle diplôm&eacute;e en <strong>gestion de PME</strong>
+              professionnelle dipl&ocirc;m&eacute;e en <strong>gestion de PME</strong>
               . &Agrave; 20 ans, j&apos;ai d&eacute;j&agrave; acquis une
               exp&eacute;rience pr&eacute;cieuse en tant que{" "}
               <strong>sapeur-pompier volontaire</strong>, o&ugrave; j&apos;ai
