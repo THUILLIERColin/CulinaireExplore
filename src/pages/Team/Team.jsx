@@ -24,7 +24,7 @@ export default function Team() {
 
   return (
     <>
-      <section id="team" className="max-w-screen mx-3 mt-10 lg:mb-36 lg:mx-28">
+      <section id="team" className="max-w-screen mx-3 mt-10 lg:mx-28">
         <h1 className="text-6xl font-aileron font-bold text-neutral text-center">
           Notre &eacute;quipe de choc
         </h1>
