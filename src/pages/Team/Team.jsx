@@ -1,25 +1,43 @@
+import { useEffect, useState } from "react";
 import SplitScreen from "../../components/ui/SplitScreen";
+import SplitScreenMobile from "../../components/ui/SplitScreenMobile";
 import Valentine from "../../assets/img/pages/team/ValentineTHUILLIER.jpg";
 import Rose from "../../assets/img/pages/team/RoseMANCHERON.jpg";
 import { CiLinkedin } from "react-icons/ci";
 
 export default function Team() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  const checkScreenSize = () => {
+    setIsMobile(window.innerWidth < 768); // md: 768px in Tailwind
+  };
+
+  useEffect(() => {
+    checkScreenSize();
+    window.addEventListener('resize', checkScreenSize);
+    return () => {
+      window.removeEventListener('resize', checkScreenSize);
+    };
+  }, []);
+
+  const SplitScreenComponent = isMobile ? SplitScreenMobile : SplitScreen;
+
   return (
     <>
-      <section id="team" className="mx-28 max-w-screen mb-36 mt-10">
+      <section id="team" className="max-w-screen mx-3 mt-10 lg:mb-36 lg:mx-28">
         <h1 className="text-6xl font-aileron font-bold text-neutral text-center">
           Notre &eacute;quipe de choc
         </h1>
         <p className="text-center text-xl text-neutral py-6 font-lovelace">
           D&eacute;couvrez les visages derri&egrave;re notre entreprise
         </p>
-        <SplitScreen
+        <SplitScreenComponent
           title="Valentine THUILLIER"
           sourceImage={Valentine}
           altImage="Profile picture of Valentine THUILLIER"
-          imagePosition="left"
+          {...(!isMobile && { imagePosition: "left" })}
         >
-          <div className="text-justify">
+          <div className="text-justify text-neutral font-lovelace">
             <p className="pb-2">
               Bonjour cher(e)s voyageurs ! Je suis Valentine, une
               professionnelle diplôm&eacute;e en <strong>gestion de PME</strong>
@@ -60,14 +78,14 @@ export default function Team() {
               contribuer au succ&egrave;s de notre entreprise !
             </p>
           </div>
-        </SplitScreen>
-        <SplitScreen
+        </SplitScreenComponent>
+        <SplitScreenComponent
           title="Rose MANCHERON"
           sourceImage={Rose}
           altImage="Profile picture of Rose MANCHERON"
-          imagePosition="right"
+          {...(!isMobile && { imagePosition: "right" })}
         >
-          <div className="text-justify">
+          <div className="text-justify text-neutral font-lovelace">
             <p className="pb-2">
               Bonjour &agrave; tous ! Je suis Rose, &acirc;g&eacute;e de 18
               ans, mon parcours atypique m&apos;a d&eacute;j&agrave; permis
@@ -110,7 +128,7 @@ export default function Team() {
               son succ&egrave;s !
             </p>
           </div>
-        </SplitScreen>
+        </SplitScreenComponent>
       </section>
     </>
   );
