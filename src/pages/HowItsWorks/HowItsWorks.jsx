@@ -1,4 +1,5 @@
 import Section from "../../components/ui/Section";
+import { FaArrowAltCircleDown } from "react-icons/fa"; 
 
 export default function HowItsWorks() {
   return (
@@ -15,22 +16,27 @@ export default function HowItsWorks() {
         <Section 
           title="Choisissez" 
           description="Un voyage sur mesure selon vos envies (pays, itinéraire, hébergement, durée...)" 
+          Icon={FaArrowAltCircleDown}
         />
         <Section 
           title="Construisez" 
           description="Un séjour à votre image (activités, dégustations, planning...)" 
+          Icon={FaArrowAltCircleDown}
         />
         <Section 
           title="Validez" 
           description="Assurez-vous que tout vous convient" 
+          Icon={FaArrowAltCircleDown}
         />
         <Section 
           title="Réservez" 
           description="Vous-même ou laissez-nous faire (billets, hôtel...)" 
+          Icon={FaArrowAltCircleDown}
         />
         <Section 
           title="C'est parti !" 
           description="Profitez de votre voyage culinaire avec notre accompagnement 24h/24h durant tout votre séjour" 
+          Icon={FaArrowAltCircleDown}
         />
         <Section 
           title="Partagez" 
