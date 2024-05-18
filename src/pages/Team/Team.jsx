@@ -1,28 +1,46 @@
+import { useEffect, useState } from "react";
 import SplitScreen from "../../components/ui/SplitScreen";
-import Valentine from "../../assets/img/ValentineTHUILLIER.jpg";
-import Rose from "../../assets/img/RoseMANCHERON.jpg";
+import SplitScreenMobile from "../../components/ui/SplitScreenMobile";
+import Valentine from "../../assets/img/pages/team/ValentineTHUILLIER.jpg";
+import Rose from "../../assets/img/pages/team/RoseMANCHERON.jpg";
 import { CiLinkedin } from "react-icons/ci";
 
 export default function Team() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  const checkScreenSize = () => {
+    setIsMobile(window.innerWidth < 768); // md: 768px in Tailwind
+  };
+
+  useEffect(() => {
+    checkScreenSize();
+    window.addEventListener('resize', checkScreenSize);
+    return () => {
+      window.removeEventListener('resize', checkScreenSize);
+    };
+  }, []);
+
+  const SplitScreenComponent = isMobile ? SplitScreenMobile : SplitScreen;
+
   return (
     <>
-      <section id="team" className="mx-28 max-w-screen mb-36 mt-10">
+      <section id="team" className="max-w-screen mx-3 mt-10 lg:mx-28">
         <h1 className="text-6xl font-aileron font-bold text-neutral text-center">
           Notre &eacute;quipe de choc
         </h1>
         <p className="text-center text-xl text-neutral py-6 font-lovelace">
           D&eacute;couvrez les visages derri&egrave;re notre entreprise
         </p>
-        <SplitScreen
+        <SplitScreenComponent
           title="Valentine THUILLIER"
           sourceImage={Valentine}
           altImage="Profile picture of Valentine THUILLIER"
-          imagePosition="left"
+          {...(!isMobile && { imagePosition: "left" })}
         >
-          <div className="text-justify">
+          <div className="text-justify text-neutral font-lovelace">
             <p className="pb-2">
               Bonjour cher(e)s voyageurs ! Je suis Valentine, une
-              professionnelle diplôm&eacute;e en <strong>gestion de PME</strong>
+              professionnelle dipl&ocirc;m&eacute;e en <strong>gestion de PME</strong>
               . &Agrave; 20 ans, j&apos;ai d&eacute;j&agrave; acquis une
               exp&eacute;rience pr&eacute;cieuse en tant que{" "}
               <strong>sapeur-pompier volontaire</strong>, o&ugrave; j&apos;ai
@@ -40,7 +58,7 @@ export default function Team() {
             </p>
             <p className="pb-2">
               Je crois fermement en{" "}
-              <strong>l&apos;honnêtet&eacute;, la transparence</strong> et le
+              <strong>l&apos;honnêtet&eacute;, la transparence</strong> et le{" "}
               <strong>travail acharn&eacute;</strong>, et je m&apos;efforce de
               les int&eacute;grer dans tous les aspects de ma vie
               professionnelle et personnelle.
@@ -60,14 +78,14 @@ export default function Team() {
               contribuer au succ&egrave;s de notre entreprise !
             </p>
           </div>
-        </SplitScreen>
-        <SplitScreen
+        </SplitScreenComponent>
+        <SplitScreenComponent
           title="Rose MANCHERON"
           sourceImage={Rose}
           altImage="Profile picture of Rose MANCHERON"
-          imagePosition="right"
+          {...(!isMobile && { imagePosition: "right" })}
         >
-          <div className="text-justify">
+          <div className="text-justify text-neutral font-lovelace">
             <p className="pb-2">
               Bonjour &agrave; tous ! Je suis Rose, &acirc;g&eacute;e de 18
               ans, mon parcours atypique m&apos;a d&eacute;j&agrave; permis
@@ -76,9 +94,9 @@ export default function Team() {
               .
             </p>
             <p className="pb-2">
-              Issu d&apos;une formation en <strong>gestion de PME</strong>,
+              Issue d&apos;une formation en <strong>gestion de PME</strong>,
               j&apos;ai appris l&apos;importance de la <strong>rigueur</strong>,
-              de <strong>l&apos;organisation</strong> et de la
+              de <strong>l&apos;organisation</strong> et de la{" "}
               <strong>pr&eacute;cision</strong>, des valeurs que je
               m&apos;efforce d&apos;appliquer au quotidien dans mes projets
               professionnels et personnels.
@@ -88,7 +106,7 @@ export default function Team() {
               d&apos;une <strong>troupe de th&eacute;&acirc;tre</strong> qui m&apos;a
               permis de d&eacute;velopper des qualit&eacute;s telles que{" "}
               <strong>l&apos;ouverture aux autres</strong>, la{" "}
-              <strong>communication efficace</strong>
+              <strong>communication efficace</strong>{" "}
               et <strong>la gestion du stress</strong>. Mon temps libre est
               &eacute;galement d&eacute;di&eacute; &agrave; la cr&eacute;ation
               d’albums photos et &agrave; mes proches, avec qui je partage des
@@ -110,7 +128,7 @@ export default function Team() {
               son succ&egrave;s !
             </p>
           </div>
-        </SplitScreen>
+        </SplitScreenComponent>
       </section>
     </>
   );

@@ -1,4 +1,4 @@
-import logoAndText from "../assets/img/logoAndText.png";
+import logoAndText from "../assets/img/shared/logoAndText.png";
 import { Link } from "react-router-dom";
 import { FaRegHeart } from "react-icons/fa";
 import { RiTwitterXLine } from "react-icons/ri";

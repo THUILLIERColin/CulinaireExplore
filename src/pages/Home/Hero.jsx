@@ -5,6 +5,13 @@ import { IoAirplaneOutline } from "react-icons/io5";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
+import HeroGreekBeach from "../../assets/img/pages/home/hero_greek_beach.avif";
+import HeroSkewersFriesGreek from "../../assets/img/pages/home/hero_skewers_fries_greek.avif";
+import HeroSpanishRestaurant from "../../assets/img/pages/home/hero_spanish_restaurant.avif";
+import HeroPaella from "../../assets/img/pages/home/hero_paella.avif";
+import HeroMadridStreet from "../../assets/img/pages/home/hero_madrid_street.avif";
+import HeroPasties from "../../assets/img/pages/home/hero_pasties.avif";
+import HeroPortugueseStreet from "../../assets/img/pages/home/hero_portuguese_street.avif";
 
 export default function Hero() {
   const location = useLocation();
@@ -72,7 +79,7 @@ export default function Hero() {
                         <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-100">
                         {!imagesLoaded.image1 && <div className="skeleton h-64 w-44"></div>}
                           <img
-                            src="https://images.unsplash.com/photo-1659333377868-308305e24aa8?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            src={HeroGreekBeach}
                             alt="Restaurant Grecque"
                             className="h-full w-full object-cover object-center"
                             onLoad={() => handleImageLoaded("image1")}
@@ -81,7 +88,7 @@ export default function Hero() {
                         <div className="h-64 w-44 overflow-hidden rounded-lg">
                         {!imagesLoaded.image2 && <div className="skeleton h-64 w-44"></div>}
                           <img
-                            src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?q=80&w=2535&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            src={HeroSkewersFriesGreek}
                             alt="Nourriture Grecque"
                             className="h-full w-full object-cover object-center"
                             onLoad={() => handleImageLoaded("image2")}
@@ -92,7 +99,7 @@ export default function Hero() {
                         <div className="h-64 w-44 overflow-hidden opacity-0 sm:opacity-100 rounded-lg">
                         {!imagesLoaded.image3 && <div className="skeleton h-64 w-44"></div>}
                           <img
-                            src="https://images.unsplash.com/photo-1589704379319-3b83010f661e?q=80&w=2061&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            src={HeroSpanishRestaurant}
                             alt="Restaurant Espagnol"
                             className="h-full w-full object-cover object-center"
                             onLoad={() => handleImageLoaded("image3")}
@@ -101,7 +108,7 @@ export default function Hero() {
                         <div className="h-64 w-44 overflow-hidden rounded-lg">
                         {!imagesLoaded.image4 && <div className="skeleton h-64 w-44"></div>}
                           <img
-                            src="https://plus.unsplash.com/premium_photo-1663855531676-3fcab15776af?q=80&w=2565&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            src={HeroPaella}
                             alt="Paella Espagnole"
                             className="h-full w-full object-cover object-center"
                             onLoad={() => handleImageLoaded("image4")}
@@ -110,7 +117,7 @@ export default function Hero() {
                         <div className="h-64 w-44 overflow-hidden rounded-lg">
                         {!imagesLoaded.image5 && <div className="skeleton h-64 w-44"></div>}
                           <img
-                            src="https://images.unsplash.com/photo-1711141179475-b415da29c8b1?q=80&w=2582&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            src={HeroMadridStreet}
                             alt="Rue de Madrid"
                             className="h-full w-full object-cover object-center"
                             onLoad={() => handleImageLoaded("image5")}
@@ -121,8 +128,8 @@ export default function Hero() {
                         <div className="h-64 w-44 overflow-hidden rounded-lg">
                           {!imagesLoaded.image1 && <div className="skeleton h-64 w-44"></div>}
                           <img
-                            src="https://images.unsplash.com/photo-1671369527952-2caec36dee50?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                            alt="Nourriture Portugaise"
+                            src={HeroPasties}
+                            alt="Pasties de Nata"
                             className="h-full w-full object-cover object-center"
                             onLoad={() => handleImageLoaded("image6")}
                           />
@@ -130,7 +137,7 @@ export default function Hero() {
                         <div className="h-64 w-44 overflow-hidden rounded-lg">
                           {!imagesLoaded.image1 && <div className="skeleton h-64 w-44"></div>}
                           <img
-                            src="https://images.unsplash.com/photo-1505819244306-ef53954f9648?q=80&w=2499&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            src={HeroPortugueseStreet}
                             alt="Rue Portugaise"
                             className="h-full w-full object-cover object-center"
                             onLoad={() => handleImageLoaded("image7")}
