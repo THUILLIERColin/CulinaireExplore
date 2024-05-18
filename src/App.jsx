@@ -1,18 +1,26 @@
 import { Routes, Route } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 import "./App.css";
-import Footer from "./components/Footer";
-import Home from "./pages/Home";
+import Footer from "./layout/Footer";
+import Home from "./pages/Home/Home";
 import NotFoundPage from "./pages/NotFoundPage";
 import IWantToTravel from "./pages/IWantToTravel";
 import Concept from "./pages/Concept";
-import Team from "./pages/Team";
+import Team from "./pages/Team/Team";
 import Commitment from "./pages/Commitment";
 import HowItsWorks from "./pages/HowItsWorks";
 import Contact from "./pages/Contact";
 import TermsOfSale from "./pages/TermsOfSale";
-import Navbar from "./components/Navbar";
+import Navbar from "./layout/Navbar";
 
 export default function App() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  
   return (
     <>
       <Navbar />

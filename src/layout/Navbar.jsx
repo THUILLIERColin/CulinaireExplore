@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import PropType from "prop-types";
-import logo from "../assets/img/logo.png"
+import logo from "../assets/img/shared/logo.png"
 import ToogleTheme from "./ToogleTheme";
 
 Navbar.propTypes = {

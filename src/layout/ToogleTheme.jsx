@@ -4,6 +4,13 @@ function ToggleTheme() {
   const [isNightMode, setIsNightMode] = useState(false); // État initial false, indiquant le mode jour
 
   useEffect(() => {
+    // Si le thème est déjà enregistré dans le localStorage, on l'applique
+    if(localStorage.getItem("theme")) {
+      document.documentElement.setAttribute("data-theme", localStorage.getItem("theme"));
+      setIsNightMode(localStorage.getItem("theme") === "GourmetVoyagerDark");
+      return;
+    }
+    // Sinon, on applique le thème en fonction des préférences de l'utilisateur
     const theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "GourmetVoyagerDark" : "GourmetVoyager";
     document.documentElement.setAttribute("data-theme", theme);
     setIsNightMode(theme === "GourmetVoyagerDark");
@@ -14,8 +21,10 @@ function ToggleTheme() {
     setIsNightMode(!isNightMode); // Inverse l'état de isNightMode
     if (isNightMode) {
         document.documentElement.setAttribute("data-theme", "GourmetVoyager");
+        localStorage.setItem("theme", "GourmetVoyager");
     } else {
         document.documentElement.setAttribute("data-theme", "GourmetVoyagerDark");
+        localStorage.setItem("theme", "GourmetVoyagerDark");
     }
   };
 
