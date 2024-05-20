@@ -29,9 +29,9 @@ export default function SplitScreen({ title, sourceImage, altImage, children, im
       <div className={`hero-content flex-col ${imageOrderClass}`}>
         <div className="text-center lg:text-left" data-aos={`fade-${aosText}`}>
           <h1 className="text-5xl font-aileron font-bold text-neutral">{title}</h1>
-          <p className="py-6 font-lovelace text-lg text-neutral">
+          <div className="py-6 font-lovelace text-lg text-neutral">
             {children}
-          </p>
+          </div>
         </div>
         <div className="card w-full max-w-xl h-full">
           <div className="card-body">

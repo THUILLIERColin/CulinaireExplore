@@ -9,7 +9,7 @@ export default function HowItsWorks() {
           Comment ça marche ?
         </h1>
         <p className="text-center text-xl text-neutral py-6 font-lovelace">
-          Découvrez les visages derrière notre entreprise
+          Découvrez comment nous vous accompagnons dans votre voyage culinaire
         </p>
       </section>
       <main className="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">

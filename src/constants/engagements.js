@@ -1,4 +1,4 @@
-import { FaRegEye, FaClipboardList, FaDollarSign, FaSuitcaseRolling, FaUmbrella, FaBook, FaHeadset } from 'react-icons/fa';
+import { FaInfoCircle, FaRegEye, FaClipboardList, FaDollarSign, FaSuitcaseRolling, FaUmbrella, FaBook, FaHeadset } from 'react-icons/fa';
 
 export const engagements = [
   {
@@ -36,4 +36,11 @@ export const engagements = [
     title: "L’assistance 24/24",
     subTitle: "Bénéficiez d'une assistance disponible 24 heures sur 24, tant en France qu'à votre destination, tout au long de votre séjour.",
   },
+  {
+    Icon: FaInfoCircle,
+    title: "Découvrez Plus",
+    subTitle: "Cliquez pour explorer tous nos engagements et ce que nous offrons de plus.",
+    link: "/commitment"
+  }
+  
 ];
