@@ -3,7 +3,7 @@ import PropsTypes from 'prop-types';
 // images -> contient img et alt de chaque image
 SplitWithTwoImg.propTypes = {
     title: PropsTypes.string,
-    desc: PropsTypes.string,
+    children: PropsTypes.node,
     imagesPosition: PropsTypes.oneOf(['left', 'right']),
     images: PropsTypes.arrayOf(
         PropsTypes.shape({
@@ -13,7 +13,7 @@ SplitWithTwoImg.propTypes = {
     )
 };
 
-export default function SplitWithTwoImg({ title, desc, imagesPosition, images}) {
+export default function SplitWithTwoImg({ title, children, imagesPosition, images}) {
     const imageOrderClass = imagesPosition === 'right' ? 'md:flex-row' : 'md:flex-row-reverse';
 
   return (
@@ -23,7 +23,7 @@ export default function SplitWithTwoImg({ title, desc, imagesPosition, images}) 
             {title}
         </h2>
         <p className="font-lovelace text-neutral">
-            {desc}
+            {children}
         </p>
       </div>
 
