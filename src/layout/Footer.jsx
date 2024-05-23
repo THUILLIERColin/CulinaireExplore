@@ -52,7 +52,7 @@ export default function Footer() {
             <Link to="/how-it-works" className="link link-hover font-poppins">
               Comment ça marche ?
             </Link>
-            <Link className="link link-hover font-poppins">
+            <Link to="/gourmet-notebook" className="link link-hover font-poppins">
               Carnet gourmand
             </Link>
             <Link className="link link-hover font-poppins">
