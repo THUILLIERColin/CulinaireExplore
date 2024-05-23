@@ -64,7 +64,7 @@ export default function Contact() {
               <br />
               Vous pouvez nous écrire par <strong>email, prendre RDV</strong> pour que l&apos;on
               vous appelle (téléphone) ou bien formuler une demande de devis
-              ci-dessous :
+              ci-dessus :
             </p>
           </div>
         </div>
