@@ -2,8 +2,8 @@ const Concept = () => {
   return (
     <>
       <div className="container mx-auto px-4 py-12">
-        <h1 className="text-3xl font-bold text-center text-gray-800">Le Concept de Culinaire Explore</h1>
-        <div className="mt-8 text-gray-600 text-lg">
+        <h1 className="text-3xl font-bold text-center text-neutral font-aileron">Le Concept de Culinaire Explore</h1>
+        <div className="mt-8 text-neutral font-lovelace text-lg">
           <p className="mb-4">
             Nous sommes <strong>Rose et Valentine</strong>, deux amies passionnées. Rose est une voyageuse intrépide tandis que Valentine
             raffole des bons plats de sa grand-mère. Ensemble, nous avons décidé d&apos;allier nos deux passions pour créer quelque chose d&apos;unique :
