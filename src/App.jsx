@@ -12,6 +12,7 @@ import Commitment from "./pages/Commitment";
 import HowItsWorks from "./pages/HowItsWorks";
 import Contact from "./pages/Contact";
 import TermsOfSale from "./pages/TermsOfSale";
+import GourmetNotebook from "./pages/GourmetNotebook";
 import Navbar from "./layout/Navbar";
 
 export default function App() {
@@ -34,6 +35,7 @@ export default function App() {
         <Route path= "/how-it-works" element={<HowItsWorks />} />
         <Route path= "/contact" element={<Contact />} />
         <Route path= "/terms-of-sale" element={<TermsOfSale />} />
+        <Route path= "/gourmet-notebook" element={<GourmetNotebook />} />
       </Routes>
       <Footer />
     </>

@@ -62,6 +62,9 @@ export default function Navbar() {
                 <Link to="/how-it-works">Comment &ccedil;a marche ?</Link>
               </li>
               <li>
+                <Link to="/gourmet-notebook">Le Carnet Gourmand</Link>
+              </li>
+              <li>
                 <Link to="/contact">Nous contacter</Link>
               </li>
             </ul>
@@ -96,6 +99,9 @@ export default function Navbar() {
             </li>
             <li>
               <Link to="/how-it-works">Comment &ccedil;a marche ?</Link>
+            </li>
+            <li>
+            <Link to="/gourmet-notebook">Le Carnet Gourmand</Link>
             </li>
             <li>
               <Link to="/contact">Nous contacter</Link>
