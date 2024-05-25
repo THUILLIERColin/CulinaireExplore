@@ -1,8 +1,10 @@
 import PropsTypes from 'prop-types';
+import { useEffect } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
-// images -> contient img et alt de chaque image
 SplitWithTwoImg.propTypes = {
-    title: PropsTypes.string,
+    title: PropsTypes.node,
     children: PropsTypes.node,
     imagesPosition: PropsTypes.oneOf(['left', 'right']),
     images: PropsTypes.arrayOf(
@@ -16,15 +18,20 @@ SplitWithTwoImg.propTypes = {
 export default function SplitWithTwoImg({ title, children, imagesPosition, images}) {
     const imageOrderClass = imagesPosition === 'right' ? 'md:flex-row' : 'md:flex-row-reverse';
 
+    useEffect(() => {
+        Aos.init({ duration: 1000 });
+    }
+    , []);
   return (
-    <div className={`flex items-center flex-col ${imageOrderClass} justify-between mt-[4.5rem]`}>
+    <div data-aos="fade-up"
+     className={`flex items-center flex-col ${imageOrderClass} justify-between mt-[4.5rem]`}>
       <div className="w-full md:w-[45%] text-start text-[1.1rem] mb-8 md:mb-0">
         <h2 className="pb-4 font-aileron text-neutral text-4xl">
             {title}
         </h2>
-        <p className="font-lovelace text-neutral">
+        <div className="font-lovelace text-neutral">
             {children}
-        </p>
+        </div>
       </div>
 
       <div className="relative w-full flex flex-col md:flex-row md:w-6/12 items-center md:justify-between z-[1]">
