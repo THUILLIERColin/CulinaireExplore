@@ -1,6 +1,5 @@
 import PropsTypes from 'prop-types';
 
-// images -> contient img et alt de chaque image
 SplitWithTwoImg.propTypes = {
     title: PropsTypes.string,
     children: PropsTypes.node,
