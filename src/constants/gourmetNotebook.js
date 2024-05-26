@@ -107,7 +107,7 @@ export const splitWithTwoImgData = [
       currywurst et les bretzels, qui raviront les amateurs de saveurs
       authentiques.
       <br />
-      Profitez d&apos;un currywurst &eacute;pic&eacute; ou d&apos;un pretzel moelleux et sal&eacute; pour
+      Profitez d&apos;un currywurst &eacute;pic&eacute; ou d&apos;un bretzel moelleux et sal&eacute; pour
       une exp&eacute;rience culinaire unique et savoureuse.
     `,
   },
