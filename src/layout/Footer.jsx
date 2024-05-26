@@ -91,6 +91,10 @@ export default function Footer() {
           <p className="font-aileron mr-4 text-center lg:text-left">
             <FaRegHeart className="w-5 h-6 inline-block" />
             &nbsp;Fait avec passion &agrave; Nancy
+            <br />
+            <span className="text-xs">
+              Imagin&eacute; et d&eacute;velopp&eacute; par <strong>THUILLIER Colin</strong>
+            </span>
           </p>
           <p className="text-center font-aileron">
             &copy; 2024 Culinaire Explore. Tous droits réservés.
