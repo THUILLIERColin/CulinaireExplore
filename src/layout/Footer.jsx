@@ -92,7 +92,7 @@ export default function Footer() {
             <FaRegHeart className="w-5 h-6 inline-block" />
             &nbsp;Fait avec passion &agrave; Nancy
             <br />
-            <span className="text-xs">
+            <span className="text-[0.6rem]">
               Imagin&eacute; et d&eacute;velopp&eacute; par <strong>THUILLIER Colin</strong>
             </span>
           </p>
