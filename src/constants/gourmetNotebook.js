@@ -107,7 +107,7 @@ export const splitWithTwoImgData = [
       currywurst et les bretzels, qui raviront les amateurs de saveurs
       authentiques.
       <br />
-      Profitez d&apos;un currywurst &eacute;pic&eacute; ou d&apos;un pretzel moelleux et sal&eacute; pour
+      Profitez d&apos;un currywurst &eacute;pic&eacute; ou d&apos;un bretzel moelleux et sal&eacute; pour
       une exp&eacute;rience culinaire unique et savoureuse.
     `,
   },
@@ -190,23 +190,6 @@ export const splitWithTwoImgData = [
       <br />
       Que ce soit pour un repas en famille ou entre amis, laissez-vous
       s&eacute;duire par la g&eacute;n&eacute;rosit&eacute; de la cuisine polonaise.
-    `,
-  },
-  {
-    title: "D&eacute;couvrez les saveurs de la <strong>Russie</strong>",
-    imagesPosition: "right",
-    images: [
-      { img: images.borscht, alt: "Borscht" },
-      { img: images.pelmeni, alt: "Pelmeni" },
-    ],
-    content: `
-      La Russie est une terre de traditions culinaires riches et vari&eacute;es.
-      D&eacute;couvrez les saveurs du borscht et des pelmeni, des plats
-      embl&eacute;matiques de la cuisine russe.
-      <br />
-      Profitez d&apos;un voyage culinaire &agrave; travers la Russie avec ces plats
-      qui allient chaleur et tradition, parfaits pour toutes les
-      occasions.
     `,
   },
 ];
