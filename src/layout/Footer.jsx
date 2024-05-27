@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { FaRegHeart } from "react-icons/fa";
 import { RiTwitterXLine } from "react-icons/ri";
 import { AiFillInstagram } from "react-icons/ai";
+import { CiLinkedin } from "react-icons/ci";
 
 export default function Footer() {
   return (
@@ -86,14 +87,17 @@ export default function Footer() {
           </nav>
         </div>
         <div className="divider"></div>
-        {/* flex-col lg:flex-row items-center justify-between */}
         <div className="footer-bottom grid grid-cols-1 lg:grid-cols-3 gap-4 items-center justify-between">
           <p className="font-aileron mr-4 text-center lg:text-left">
             <FaRegHeart className="w-5 h-6 inline-block" />
             &nbsp;Fait avec passion &agrave; Nancy
             <br />
             <span className="text-[0.6rem]">
-              Imagin&eacute; et d&eacute;velopp&eacute; par <strong>THUILLIER Colin</strong>
+              Imagin&eacute; et d&eacute;velopp&eacute; par 
+              <a href="https://www.linkedin.com/in/colin-thuillier-161447250/" target="_blank" className="font-bold">
+                <CiLinkedin className="w-3 h-3 inline-block" /> 
+                Colin Thuillier
+              </a>
             </span>
           </p>
           <p className="text-center font-aileron">
