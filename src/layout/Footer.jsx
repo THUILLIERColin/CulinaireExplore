@@ -86,7 +86,6 @@ export default function Footer() {
           </nav>
         </div>
         <div className="divider"></div>
-        {/* flex-col lg:flex-row items-center justify-between */}
         <div className="footer-bottom grid grid-cols-1 lg:grid-cols-3 gap-4 items-center justify-between">
           <p className="font-aileron mr-4 text-center lg:text-left">
             <FaRegHeart className="w-5 h-6 inline-block" />
