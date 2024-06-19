@@ -8,9 +8,9 @@ export default function GourmetNotebook() {
         Le Carnet Gourmand
       </h1>
       <p className="mt-8 text-neutral font-lovelace text-lg">
-        <strong>Le Carnet Gourmand</strong> est un espace d&eacute;di&eacute; &agrave;
-        la d&eacute;couverte de nouvelles saveurs, de nouvelles recettes et de
-        nouvelles histoires.
+        <strong>Le Carnet Gourmand</strong> est un espace d&eacute;di&eacute;
+        &agrave; la d&eacute;couverte de nouvelles saveurs, de nouvelles
+        recettes et de nouvelles histoires.
         <br />
         Vous y trouverez les sp&eacute;cialit&eacute;s culinaires de certains
         pays d&apos;Europe, en esp&eacute;rant que cela vous donnera envie de
