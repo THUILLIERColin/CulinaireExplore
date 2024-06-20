@@ -7,6 +7,7 @@ import EngagementItem from "../../components/ui/EngagementItem";
 import { bento } from "../../constants/bento";
 import { engagements } from "../../constants/engagements";
 import { Link } from "react-router-dom";
+import SignUpSection from "../../components/ui/SignUpSection";
 
 export default function Home() {
   useEffect(() => {
@@ -58,6 +59,7 @@ export default function Home() {
           </Link>
         </div>
       </section>
+      <SignUpSection />
     </main>
   );
 }

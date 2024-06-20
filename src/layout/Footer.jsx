@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { FaRegHeart } from "react-icons/fa";
 import { RiTwitterXLine } from "react-icons/ri";
 import { AiFillInstagram } from "react-icons/ai";
+import { CiLinkedin } from "react-icons/ci";
 
 export default function Footer() {
   return (
@@ -92,7 +93,11 @@ export default function Footer() {
             &nbsp;Fait avec passion &agrave; Nancy
             <br />
             <span className="text-[0.6rem]">
-              Imagin&eacute; et d&eacute;velopp&eacute; par <strong>THUILLIER Colin</strong>
+              Imagin&eacute; et d&eacute;velopp&eacute; par 
+              <a href="https://www.linkedin.com/in/colin-thuillier-161447250/" target="_blank" className="font-bold">
+                <CiLinkedin className="w-3 h-3 inline-block" /> 
+                Colin Thuillier
+              </a>
             </span>
           </p>
           <p className="text-center font-aileron">
