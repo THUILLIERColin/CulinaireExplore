@@ -54,7 +54,7 @@ export default function Team() {
               jouer en famille et cuisiner avec mon ch&eacute;ri. J&apos;ai
               &eacute;galement un compagnon f&eacute;lin, un adorable chat
               pr&eacute;nomm&eacute; Caramel et une tortue d&apos;eau
-              appel&eacute; Franklin.
+              appel&eacute;e Franklin.
             </p>
             <p className="pb-2">
               Je crois fermement en{" "}

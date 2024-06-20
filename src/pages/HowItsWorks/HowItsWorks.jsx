@@ -25,7 +25,7 @@ export default function HowItsWorks() {
         />
         <Section 
           title="Validez" 
-          description="Assurez-vous que tout vous convient" 
+          description="Assurez-vous que tout vous que cela vous convienne"
           Icon={FaArrowAltCircleDown}
         />
         <Section 
