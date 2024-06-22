@@ -62,10 +62,10 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      <section id="signup" className="bg-base-200 py-12 px-4">
+      <section id="signup" className="bg-base-200 py-12 px-4" data-aos="fade-up">
         <SignUpSection />
       </section>
-      <section id="partners" className="bg-base py-12 px-4">
+      <section id="partners" className="bg-base py-12 px-4" data-aos="fade-up">
         <PartnersSection />
       </section>
     </main>

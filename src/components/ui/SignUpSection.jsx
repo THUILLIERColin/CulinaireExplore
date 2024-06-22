@@ -1,7 +1,7 @@
 export default function SignUpSection() {
   return (
     <div className="max-w-7xl mx-auto flex flex-wrap md:flex-nowrap justify-between items-start">
-      <div className="md:w-1/2">
+      <div className="md:w-1/2" data-aos="fade-right">
         <h2 className="text-3xl font-bold text-neutral font-aileron">
           Rejoignez la communauté de Culinaire Explore !
         </h2>
@@ -14,7 +14,7 @@ export default function SignUpSection() {
         </button>
       </div>
       <div className="md:w-1/2 mt-8 md:mt-0 md:pl-12">
-        <ul className="list-none space-y-2 text-left text-neutral font-lovelace">
+        <ul className="list-none space-y-2 text-left text-neutral font-lovelace" data-aos="fade-left">
           <li className="pb-2">
             📨 Offres exclusives de voyages directement dans votre boîte mail.
           </li>
