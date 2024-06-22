@@ -39,7 +39,7 @@ export default function PartnersSection() {
       </div>
       <div className="order-1 md:order-2 flex flex-wrap justify-center gap-4 md:justify-end">
         {partners.map(({ name, link, imgSrc }, i) => (
-          <div key={i} className="p-4 bg-base-100 shadow-inner rounded-xl">
+          <div key={i} className="p-4 bg-base-100 shadow-inner rounded-xl transition transform hover:scale-125">
             <a href={link} target="_blank" rel="noopener noreferrer">
               <img src={imgSrc} alt="Partner" className="h-16 w-16 mb-2" />
               <span className="block text-center text-neutral">{name}</span>
