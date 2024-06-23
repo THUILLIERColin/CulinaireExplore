@@ -17,7 +17,9 @@ export default function Home() {
 
   return (
     <main>
-      <Hero />
+      <section id="hero">
+        <Hero />
+      </section>
       <section id="about_us" className="py-16 px-3 bg-base-200">
         <h1 data-aos="fade-up" className="text-4xl text-center font-aileron font-bold text-neutral">
           Chez Culinaire Explore...
@@ -35,7 +37,7 @@ export default function Home() {
 
         <Bento dataAos="fade-up" bento={bento} />
       </section>
-      <section className="py-20 px-10">
+      <section id="engagements" className="py-20 px-10">
         <h2 className="text-center text-2xl font-bold mb-10 font-aileron text-neutral">
           Pourquoi choisir Culinaire Explore ?
         </h2>
@@ -60,8 +62,12 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      <SignUpSection />
-      <PartnersSection />
+      <section id="signup" className="bg-base-200 py-12 px-4" data-aos="fade-up">
+        <SignUpSection />
+      </section>
+      <section id="partners" className="bg-base py-12 px-4" data-aos="fade-up">
+        <PartnersSection />
+      </section>
     </main>
   );
 }
